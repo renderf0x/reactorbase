@@ -30,6 +30,14 @@ router.route('/hackers')
 		var hacker = new Hacker();
 		//console.log("req = " + JSON.stringify(req));
 		hacker.name = req.body.name;
+		hacker.name_note = req.body.name_note;
+		hacker.photo = req.body.photo;
+		hacker.q1 = req.body.q1;
+		hacker.q2 = req.body.q2;
+		hacker.q3 = req.body.q3;
+		hacker.q4 = req.body.q4;
+		hacker.q5 = req.body.q5;
+		hacker.cohort = req.body.cohort;
 
 		hacker.save(function(err){
 			if (err)
