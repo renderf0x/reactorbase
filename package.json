@@ -1,0 +1,12 @@
+{
+  "name": "hr20_hackers",
+  "description": "directory v2 using node",
+  "version": "0.0.2",
+  "private": "true",
+  "dependencies": {
+    "bower": "^1.3.12",
+    "express": "4.x",
+    "express4-handlebars": "^0.1.8",
+    "mongoose": "^3.8.17"
+  }
+}

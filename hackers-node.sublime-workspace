@@ -1,0 +1,495 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"hacker",
+				"hacker_id"
+			],
+			[
+				"find",
+				"findById"
+			],
+			[
+				"body",
+				"bodyParser"
+			],
+			[
+				"men",
+				"menuTemplate"
+			],
+			[
+				"prev",
+				"previousUser"
+			],
+			[
+				"next",
+				"nextUser"
+			],
+			[
+				"dis",
+				"displayUser"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"return",
+				"returnVal"
+			],
+			[
+				"get",
+				"getPassword"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"s",
+				"script"
+			],
+			[
+				"re",
+				"results"
+			],
+			[
+				"test",
+				"testValue"
+			],
+			[
+				"is",
+				"isCommon"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"navbar",
+				"navbar-nav"
+			],
+			[
+				"user",
+				"userlistpane"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"set",
+				"setupTweetButton"
+			],
+			[
+				"me",
+				"message"
+			],
+			[
+				"new",
+				"newTweet"
+			],
+			[
+				"com",
+				"compose-area"
+			],
+			[
+				"compose",
+				"compose-area"
+			],
+			[
+				"title",
+				"titleSet"
+			],
+			[
+				"a",
+				"alertDisplayed"
+			],
+			[
+				"clicked",
+				"clickedUser"
+			],
+			[
+				"home",
+				"homelink"
+			],
+			[
+				"disp",
+				"displayUserTweets"
+			],
+			[
+				"active",
+				"activateUserLinks"
+			],
+			[
+				"newT",
+				"newTweetsMessage"
+			],
+			[
+				"alert",
+				"alertDisplayed"
+			],
+			[
+				"app",
+				"applicationState"
+			],
+			[
+				"previous",
+				"previousValue"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"ingredi",
+				"ingredientsOnly"
+			],
+			[
+				"ingre",
+				"ingredientsOnly"
+			],
+			[
+				"inger",
+				"ingredientsOnly"
+			],
+			[
+				"ingredient",
+				"ingredientCount"
+			],
+			[
+				"ing",
+				"ingredientsOnly"
+			],
+			[
+				"index",
+				"indexOf"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "server.js",
+			"settings":
+			{
+				"buffer_size": 1850,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "models/hacker.js",
+			"settings":
+			{
+				"buffer_size": 199,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 4938,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 347.0,
+		"selected_items":
+		[
+			[
+				"Packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/models/hacker.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/index.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/README.md",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/server.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/package.json",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/HR20_hackers_directory/data.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/HR20_hackers_directory/password.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/HR20_hackers_directory/index.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/HR_test/password.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/HR20_hackers_directory/README.md",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/HR_test/user-template.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/HR_test/signin.css",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/HR_test/data.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/HR_test/index.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/HR_test/main.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/2014-10-self-assessments-prcs-02/README.md",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/2014-10-self-assessments-prcs-02/tests/test_extend.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/2014-10-self-assessments-prcs-02/tests/test_map.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/2014-10-self-assessments-prcs-02/tests/test_memoize.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/2014-10-self-assessments-prcs-02/tests/test_uniq.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/2014-10-underbar/spec/underbarSpec.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/2014-10-underbar/src/underbar.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/2014-10-self-assessments-prcs-02/underbar-map/underbar-map.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/2014-10-self-assessments-prcs-02/underbar-extend/underbar-extend.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/node_tests/Keystone1/public/styles/site/layout.less",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/node_tests/Keystone1/models/User.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/node_tests/Keystone1/keystone.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/node_tests/Keystone1/templates/views/index.hbs",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/node_tests/Keystone1/templates/views/blog.hbs",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/node_tests/example.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/2014-10-self-assessments-prcs-01/README.md",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/2014-10-self-assessments-prcs-01/prcs-syntax-errors/README.md",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/2014-10-recursion/src/stringifyJSON.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/2014-10-recursion/src/getElementsByClassName.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/2014-10-recursion/SimpleTestDOM.html",
+		"/Users/derek/Documents/私用 > Real Documents/Design/web/derek.barncard.com/initial placeholder/custom.css",
+		"/Users/derek/Documents/私用 > Real Documents/Design/web/derek.barncard.com/initial placeholder/index.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/JS-Koans/2014-10-javascript-koans/koans/AboutApplyingWhatWeHaveLearnt.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/JS-Koans/2014-10-javascript-koans/koans/AboutHigherOrderFunctions.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/JS-Koans/2014-10-javascript-koans/koans/AboutInheritance.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/JS-Koans/2014-10-javascript-koans/koans/AboutMutability.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/JS-Koans/2014-10-javascript-koans/koans/AboutObjects.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/JS-Koans/2014-10-javascript-koans/koans/AboutFunctions.js",
+		"/Users/derek/Desktop/inprog.js",
+		"/Users/derek/Desktop/inprog.txt",
+		"/Users/derek/Desktop/in prog"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\\’"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\\'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "server.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1850,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1595,
+								1595
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 582.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "models/hacker.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 199,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4938,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "hackers-node.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

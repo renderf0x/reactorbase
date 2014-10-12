@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Welcome to HR20!</title>
+	<link rel="stylesheet" href="css/signin.css">
+	<!-- Bootstrap links below... -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="html/lib/handlebars-v2.0.0.js"></script>
+	<script src="html/password.js"></script>
+	<script src="html/data.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-6 col-sm-6 col-lg-4">
+				<h1>HR20 Peeps!</h1>
+			</div>
+			<div class="col-6 col-sm-6 col-lg-4"></div>
+			<div class="col-md-1">
+				<button class="btn btn-lrg btn-primary btn-block" id="displayLogin">Login</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+				<ul class="pager">
+					<li><a href="#" id="previous">Previous</a></li>
+					<li><a href="#" id="next">Next</a></li>
+				</ul>
+				<div class="dropdown">
+				  	<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+				    Select your peep!
+				    <span class="caret"></span>
+				  	</button>
+				  	<div id="menu-display">
+				  	<script id="user-menu" type="x-handlebars-template">
+				  		<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+				  			{{#each this}}
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">{{name}}</a></li>
+						    {{/each}}
+						 </ul>
+				  	</script>
+				  	</div>
+				  	<!--
+				  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+				    <li role="presentation" class="divider"></li>
+				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+				  </ul>
+				  -->
+				</div>
+				<!-- End Column -->
+			</div>
+			<div class="col-md-8">
+				<!-- User Template will go here -->
+				<div class="panel panel-default user-panel">
+
+				<script id="user-data" type="text/x-handlebars-template">
+					<div class="panel-heading">
+						<img class="user-image img-thumbnail" src="html/user-pics/{{photo}}">
+						<h1>{{name}}</h1>&nbsp;
+						<em>{{name_note}}</em>
+					</div>
+					<div class="panel-body">
+						<h3>What have you been up to before Hack Reactor?</h3>
+						{{q1}}
+						<h3>What city are you coming from to be here at HR?</h3>
+						{{q2}}
+						<h3>Tech Interests?</h3>
+						{{q3}}
+						<h3>Coding Experience?</h3>
+						{{q4}}
+						<h3>Fun Random Stuff?</h3>
+						<ul>
+						{{#each q5}}
+							<li>{{this}}</li>
+						{{/each}}
+						</ul>
+					</div>
+				</script>
+				
+				<!-- Inner Panel
+					<div class="panel-heading">
+						<img class="user-image img-thumbnail" src="user-pics/test.png">
+						<h1>Test Persona</h1>&nbsp;
+						<em>name_note: 'pronounced just like it looks'</em>
+					</div>
+					<div class="panel-body">
+						<h3>What have you been up to before Hack Reactor?</h3>
+						q1: 'I am a pancake',
+						<h3>What city are you coming from to be here at HR?</h3>
+						q2: 'I am from uranus',
+						<h3>Tech Interests?</h3>
+						q3: 'I love technology',
+						<h3>Coding Experience?</h3>
+						q4: 'I am more experienced at your mom than coding',
+						<h3>Fun Random Stuff?</h3>
+						<ul>
+							<li>Why don't you try surfing on bunnies</li>
+							<li>I am groot</li>
+						</ul>
+					</div>
+				Inner Panel -->
+				</div>
+				<!-- End User Template -->
+			</div>
+		</div>
+	</div>
+	<!--Login Modal-->
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h4 class="modal-title" id="loginModalLabel">Log in</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div class="form-signin" role="form">
+				<img class="form-image" src="https://hrhq.squarespace.com/assets/images/logo@2x.png" />
+				<h2 class="form-signin-heading">Welcome to HR20!</h2>
+				<small>Enter the passcode to see the peeps!</small>
+				<input type="password" class="form-control pass" placeholder="Password" required>
+				<button class="btn btn-lrg btn-primary btn-block" id="submitPassword" type="submit">Enter</button>
+			</div>
+	      </div>
+	      <!-- End Modal-->
+	    </div>
+	  </div>
+</div>
+</body>
+</html>
