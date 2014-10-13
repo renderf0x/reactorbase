@@ -53,6 +53,15 @@ body {
   max-height: 200px;
 }
 
+.grid-image {
+  width: 200px;
+  height: 200px;
+}
+
+.grid-name {
+  text-align: center;
+  font-weight: bold;
+}
 
 .user-panel h1 {
   display: inline;

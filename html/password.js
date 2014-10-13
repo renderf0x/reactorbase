@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 	var templateScript = $('#user-data').html()
 	var template = Handlebars.compile(templateScript);
-	$('.user-panel').append(template(peeps[0]));
+	$('.content-area').append(template(peeps[0]));
 	//randomUser();
 
 	var menuScript = $('#user-menu').html()
@@ -18,8 +18,8 @@ $(document).ready(function(){
 	$('#menu-display').append(menuTemplate(peeps));
 
 	var displayUser = function(index){
-		$('.user-panel').html('');
-		$('.user-panel').append(template(peeps[index]));
+		$('.content-area').html('');
+		$('.content-area').append(template(peeps[index]));
 		currentUser = index;
 	};
 /*
