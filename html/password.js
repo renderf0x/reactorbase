@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 	var templateScript = $('#user-data').html()
 	var template = Handlebars.compile(templateScript);
-	$('.content-area').append(template(peeps[0]));
+	//$('.content-area').append(template(peeps[0]));
 	//randomUser();
 
 	var menuScript = $('#user-menu').html()

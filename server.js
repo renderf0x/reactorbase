@@ -92,6 +92,18 @@ router.route('/hackers/:hacker_id')
 		};
 	});
 
+//get hackers by cohort
+
+router.route('/hackers/cohort/:cohort')
+	
+	.get(function(req, res){
+		Hacker.find({cohort: req.params.cohort}, function(err, hacker){
+			if (err)
+				res.send(err);
+			res.json(hacker);
+		});
+	});
+
 app.use('/api', router);
 
 app.listen(process.env.PORT || 3000);

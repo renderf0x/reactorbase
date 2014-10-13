@@ -12,6 +12,17 @@ var displayHackerByID = function(user_id){
 		});
 };
 
+var displayHackersByCohort = function(cohort){
+	var url = 'http://localhost:3000/api/hackers/cohort/' + cohort;
+	$.getJSON(
+		url,
+		function(data){
+			console.log('data is ' + JSON.stringify(data));
+			$('.content-area').html('');
+			chunkGrid(data);
+		});
+};
+
 var displayAllHackers = function(){
 	var url = 'http://localhost:3000/api/hackers/';
 	$.getJSON(
@@ -22,6 +33,10 @@ var displayAllHackers = function(){
 			chunkGrid(data);
 		});
 };
+
+//chunkGrid is a helper function that breaks up a grid of hackers into sets of 4.
+//this allows them to be inserted into the Handlebars templates in a way that uses Bootstrap's grid system
+//1 row per buffered 'chunk'.
 
 var chunkGrid = function(hackerArray){
 	var numHackers = hackerArray.length;
