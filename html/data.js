@@ -1,6 +1,9 @@
+//initial array of HR20 students.
+
 var peeps = [
 	{
 		name: 'Pira Trtasavit' ,
+		cohort: 'hr20',
 		name_note: 'Class Lead here at HR20. (FYI - it\'s pronounced "PEER-uh"; you\'re on your own with the last name)',
 		photo:'pira.jpg',
 		q1: 'Prior to Hack Reactor, I was working in administration at The University of California San Francisco at SF General Hospital. My background is in education (as a teacher and recruiter), and non-profit community building (aka, I\'m also a pastor), and I own and operate personal coaching practice. ',
@@ -11,6 +14,7 @@ var peeps = [
 	},
 	{
 		name: 'Cory Asato',
+		cohort: 'hr20',
 		name_note: 'pronounce as you will',
 		photo:'cory.jpg',
 		q1: 'I\'ve been tending bar for the better part of a decade.  Touring the food industry for my thus adult life working from fine-dining to slanging beers and shots in punky dives to crafting cocktails with some of the brightest....Oh man my 20\'s are over :) .',
@@ -21,6 +25,7 @@ var peeps = [
 	},
 	{
 		name: 'Rustin Crandall',
+		cohort: 'hr20',
 		name_note: 'Rustin is like Justin with an \"R\"',
 		photo:'rustin.png',
 		q1: 'I\'m currently a web manager at Stanford GSB. I\'ve also worked as a Program Administrator at Stanford GSB, a Product Manager for a e-commerce fashion company in the Philippines, a Program Manager for an edtech nonprofit in New York, and an IT/Education volunteer in the Peace Corps. ',
@@ -31,6 +36,7 @@ var peeps = [
 	},
 	{
 		name: 'Valentyn',
+		cohort: 'hr20',
 		name_note: '(like Valentine), or Val if you\'re lazy. Either is fine, really.',
 		photo:'valentyn.png',
 		q1: 'I\'ve been an IT consultant for 2.5 years at Accenture. I was a sysadmin for about 2 years before that with the US Army, as a civilian.',
@@ -41,6 +47,7 @@ var peeps = [
 	},
 	{
 		name: 'Arthur Chan',
+		cohort: 'hr20',
 		name_note: '',
 		photo:'arthurchan.jpg',
 		q1: 'I studied at University of the Pacific for Biology and (recently) Computer Science (Foundational Theories Concentration). Acquired an interest in web development at school, but did not have time to go for a web development concentration. I\'ve worked a bit as a pharmacy technician and interned at Western Digital prior to this.',
@@ -51,6 +58,7 @@ var peeps = [
 	},
 	{
 		name: 'Derek Barncard',
+		cohort: 'hr20',
 		name_note: 'Like the oil machinery, but not spelled like that.',
 		photo:'derekryan.jpg',
 		q1: 'Working at Twitter doing abuse review and policy enforcement. Before that I was working doing Japanese language tech support and partner management at a few different places.',
@@ -60,7 +68,8 @@ var peeps = [
 		q5: ['I\'m absolutely hooked on reading Japanese books about Peter Drucker.', 'I\'ve produced dance tunes that have charted on Beatport and been put on a compilation by Paul Oakenfold.','I lived for 1 year in France, 6 months in the UK, and on and off in Japan for years']
 	},
 	{
-		name: 'Sandeep Gonnabathula' ,
+		name: 'Sandeep Gonnabathula',
+		cohort: 'hr20',
 		name_note: 'y\'all can call me Sunny.',
 		photo:'sunny.png',
 		q1: 'I attended UT in Austin for a while before moving back to Houston, getting my Associate\'s degree and working in investment banking for Morgan Stanley.',
@@ -71,6 +80,7 @@ var peeps = [
 	},
 	{
 		name: 'Sebastian',
+		cohort: 'hr20',
 		name_note: 'like the Jamaican crab from the Little Mermaid',
 		photo:'test.png',
 		q1: 'I started in product marketing at Google and then was the "business guy" founder of a startup called Cloud Nine that got acquired by Boingo. I realized our product/eng meetings were my favorite part of the workday and then discovered HR. ',
@@ -81,6 +91,7 @@ var peeps = [
 	},
 	{
 		name: 'Rick Takes',
+		cohort: 'hr20',
 		name_note: 'like Brick without the “B”.',
 		photo:'ricktakes.jpg',
 		q1: 'Working as a freelance web developer and digital content producer for the past 5 years.  Was contracted at Cisco for 18 months as part of the global brand team to produce a series of training videos and related materials as well oversee the ongoing development of the Brand Exchange, an iStock-like platform.  Before that I worked in corporate video production and have a degree in Media Arts.',
@@ -91,6 +102,7 @@ var peeps = [
 	},
 	{
 		name: 'Judy Zaratan',
+		cohort: 'hr20',
 		name_note: '',
 		photo:'judy.jpg',
 		q1: 'I worked as a Systems Electrical Engineer at a satellite company.  Prior to that, I worked in a biotech company working as a QC Analyst.',
@@ -101,6 +113,7 @@ var peeps = [
 	},
 	{
 		name: 'Liz Portnoy',
+		cohort: 'hr20',
 		name_note: '',
 		photo:'liz.jpg',
 		q1: 'I worked as a strategy & operations consultant at Deloitte for the past two years. As an analyst I was a total generalist, so I worked on everything from developing a strategy for a material sciences company to sell its products to the government to sourcing janitors for a logistics company (glamorous, I know). Seeing how different companies work was a cool experience, but I found myself a little frustrated with not being able to create real things or products that people use, so I’m excited to switch gears.  Before Deloitte I went to Duke and got a degree in econ and cultural anthropology.',
@@ -111,6 +124,7 @@ var peeps = [
 	},
 	{
 		name: 'Tim Hua',
+		cohort: 'hr20',
 		name_note: 'last name is up to interpretation: I\'ve been getting the karate kick noise for as long as I can remember though',
 		photo:'timhua.png',
 		q1: 'I\'ve spent the last 18 months starting/maintaining an e-commerce shop. Prior to that I was a Systems Engineer (fancy title for IT) at AMD for ~8ish years.',
@@ -121,6 +135,7 @@ var peeps = [
 	},
 	{
 		name: 'Brian Zindler',
+		cohort: 'hr20',
 		name_note: '',
 		photo:'brianzindler.jpg',
 		q1: 'I recently finished my undergrad at Lawrence University in Economics. This summer I interned at a commercial real estate company. ',
@@ -131,6 +146,7 @@ var peeps = [
 	},
 	{
 		name: 'Chris Perez',
+		cohort: 'hr20',
 		name_note: '',
 		photo:'christian.jpg',
 		q1: 'I grew up on a dairy farm in southern California, traveled to the east coast for some schooling, moved back west after graduating in 2012, worked at an architecture firm for a few years, then was gradually lured to tech by my housemate who was working for Twitter at the time.',
@@ -141,6 +157,7 @@ var peeps = [
 	},
 	{
 		name: 'Issac Pao',
+		cohort: 'hr20',
 		name_note: 'That\'s Issac spelled with double s and not double a. My mom claimed to see the double s spelling in the Bible, but to this day I haven\'t been able to find it. Then again, I\'ve never tried to find it.',
 		photo:'issac.png',
 		q1: 'I\'m currently working as a software engineer at Lam Research Corp, a wafer fabrication equipment company in the semiconductor industry. I\'m taking a leave of absence to come to Hack Reactor, so I will technically still be employed during my stay. Many might ask why I am joining Hack Reactor if I\'m already an experienced software engineer. My answer to that is I want to learn the web quickly, efficiently, and thoroughly, and I believe there is no better place to do that than in Hack Reactor.',
@@ -151,6 +168,7 @@ var peeps = [
 	},
 	{
 		name: 'Alex',
+		cohort: 'hr20',
 		name_note: '',
 		photo:'xelad1.jpg',
 		q1: 'Did non profit work in the arts (which is actually where I started doing some rudimentary coding in PHP/HTML/CSS).  I\'ve also intermittently taught private music lessons since college.  My family owns a small restaurant here in San Francisco as well where I help out.',
@@ -161,6 +179,7 @@ var peeps = [
 	},
 	{
 		name: 'Nikhil Ballaney',
+		cohort: 'hr20',
 		name_note: 'Nick-hill',
 		photo:'nikhil.jpg',
 		q1: 'Graduated in Management Studies in May this year.',
@@ -171,6 +190,7 @@ var peeps = [
 	},
 	{
 		name: 'Raymond Ma',
+		cohort: 'hr20',
 		name_note: '',
 		photo:'raymondma.jpg',
 		q1: 'I graduated from my undergraduate studies last September and began working in San Francisco around March / April. During that time I also spent a large portion of my time studying for a few actuary exams.',
@@ -181,6 +201,7 @@ var peeps = [
 	},
 	{
 		name: 'Robert Niimi',
+		cohort: 'hr20',
 		name_note: '',
 		photo:'robertniimi.jpg',
 		q1: 'Prior to Hack Reactor I had been working Full-time at P&G. All my prior experience has been in mechanical design and operations management. ',
@@ -191,6 +212,7 @@ var peeps = [
 	},
 	{
 		name: 'Bernie Chu',
+		cohort: 'hr20',
 		name_note: '',
 		photo:'berniechu.jpg',
 		q1: 'Just got my PhD in chemical and systems biology from Stanford but a combo of anemic job market and disillusionment with science led me to switch gears.',
@@ -201,6 +223,7 @@ var peeps = [
 	},
 	{
 		name: 'Owen Diehl',
+		cohort: 'hr20',
 		name_note: '',
 		photo:'owendiehl.jpg',
 		q1: 'An Economics and Philosophy student, I\'ve been out of school for a year and a half and have dabbled in finance and insurance, neither of which held lasting interest. The past few months have been dedicated to teaching myself to code.',
@@ -211,6 +234,7 @@ var peeps = [
 	},
 	{
 		name: 'Sasha Bayan',
+		cohort: 'hr20',
 		name_note: 'as in Sasha Baron Cohen or Sasha Fierce',
 		photo:'sashabanyan.jpg',
 		q1: 'Graduated in 2013 from Northwestern, spent several months afterwards launching an album of my original music, working at a recording studio in LA, and freelancing as a guitarist, sitarist, and singer-songwriter.',
@@ -221,6 +245,7 @@ var peeps = [
 	},
 	{
 		name: 'David Raleigh',
+		cohort: 'hr20',
 		name_note: 'David, but if you call me Dave or Raleigh it\'s all good by me',
 		photo:'davidraleigh.jpg',
 		q1: 'Last job was working in Washington DC on a NASA software product to keep close formation satellites from colliding. Before that I worked on Geographic Information Systems software for importing height map data, working with computational geometry and testing projection transformations. I have an English lit degree and a masters in geodesy (what the heck is geodesy, right?).',
@@ -231,6 +256,7 @@ var peeps = [
 	},
 	{
 		name: 'Rachel Sison',
+		cohort: 'hr20',
 		name_note: 'My nickname is Peter, but that won\'t make sense to any of you for a while. You can call me Rachel or Peter :) ',
 		photo:'rachaelsison.jpg',
 		q1: 'I was a Realtor for a while, an Esthetician for a few years, I travelled for a bit, and then I went back to school a couple years ago. I just graduated UC Berkeley, my major was Cognitive Science, with a concentration in Computer Science.',
@@ -241,6 +267,7 @@ var peeps = [
 	},
 	{
 		name: 'Douglas Eichelberger',
+		cohort: 'hr20',
 		name_note: 'first name usually shortened to \'dug\' (my username in various places around the web), last name avoided.',
 		photo:'dug.jpg',
 		q1: 'I was at Palantir for the past four years, performing various duties across the BD and engineering teams. A looong time ago I studied math (with a dose of CS) at MIT.',
@@ -251,6 +278,7 @@ var peeps = [
 	},
 	{
 		name: 'John Tan',
+		cohort: 'hr20',
 		name_note: '',
 		photo:'johntan.jpg',
 		q1: 'I was studying Biochemistry at the University of Minnesota.',
@@ -261,6 +289,7 @@ var peeps = [
 	},
 	{
 		name: 'Michael Lom',
+		cohort: 'hr20',
 		name_note: '',
 		photo:'michaellom.png',
 		q1: 'I worked as a CPA for a public accounting firm, performing quarterly and year-end audits of company financial statements within the construction and investment management industries.',
@@ -271,6 +300,7 @@ var peeps = [
 	},
 	{
 		name: 'Janet Brown',
+		cohort: 'hr20',
 		name_note: 'as in miss jackson...',
 		photo:'janetbrown.png',
 		q1: 'Started life in consulting, worked for some great brands and now have own consulting business.  ',
@@ -281,6 +311,7 @@ var peeps = [
 	},
 	{
 		name: 'Dennis Lin',
+		cohort: 'hr20',
 		name_note: 'Just call me Denny ;)',
 		photo:'dennislin.png',
 		q1: 'I recently graduated from university in Taiwan with a BSci in Compute Science. I attended to various programming contests since high school. Most of them are ACM-ICPC-like. ',
@@ -291,6 +322,7 @@ var peeps = [
 	},
 	{
 		name: 'Jerod Rubalcava',
+		cohort: 'hr20',
 		name_note: 'Program Manager of Class Experience & HIR, as well as one of your Class Leads here at Hack Reactor.',
 		photo:'jarodrubalcava.jpg',
 		q1: 'Prior to Hack Reactor, I was an Instructor at Guangxi University in China.  I taught Industrial/Organizational Psychology & Globalization, Culture, and Social Psychology, as well as electives such as Progressive Stress Management, The Social and Cultural Influences of Bruce Lee, and Event Planning for Charity: Flashmob.  Before China, I worked at University of CA San Francisco, the State of CA Dept. of Rehabilitation, Chaired the San Francisco Mayor\'s Committee for Employment of Persons with Disabilities all doing academic and career advising, teaching, coaching groups of students, persons with severe and chronic mental illness, chemical dependency, and forensic backgrounds. I also obtained my Masters in Counseling Psychology while working in the field.',
@@ -301,6 +333,7 @@ var peeps = [
 	},
 	{
 		name: 'Derek Wu',
+		cohort: 'hr20',
 		name_note: 'I prefer Derek, but you can call me Dai (pronounced die) as well',
 		photo:'derekwu.jpg',
 		q1: 'I worked at Blue Shield of California as an actuarial analyst for the past 4 years. Prior to that I attended University of California, San Diego as a Math/Economics joint major.',
@@ -311,6 +344,7 @@ var peeps = [
 	},
 	{
 		name: 'Anastasia Zotova',
+		cohort: 'hr20',
 		name_note: '',
 		photo:'anastasiavoltova.png',
 		q1: '18 months ago I co-founded an online education startup.  Before that I worked in management consulting.',
@@ -321,6 +355,7 @@ var peeps = [
 	},
 	{
 		name: 'Brett Leibowitz',
+		cohort: 'hr20',
 		name_note: '',
 		photo:'brettleibowitz.jpg',
 		q1: 'I graduated from Princeton Engineering in 2013 and was working as an Integration Engineer at Epic Systems for a little over a year.',

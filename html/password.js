@@ -2,6 +2,7 @@ var key = "unhashed";
 var pass = "";
 var loggedIn = false;
 var currentUser = 1;
+var externalized;
 
 $(document).ready(function(){
 
@@ -21,6 +22,18 @@ $(document).ready(function(){
 		$('.user-panel').append(template(peeps[index]));
 		currentUser = index;
 	};
+/*
+	var displayHackerByID = function(user_id){
+		$.getJSON(
+			'http://localhost:3000/api/hackers/' + user_id,
+			function(data){
+				$('.user-panel').html('');
+				$('.user-panel').append(template(data));
+			});
+	};
+
+	externalized = displayHackerByID;
+	*/
 
 	var nextUser = function(){
 		if (currentUser + 1 >= peeps.length){
