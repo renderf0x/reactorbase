@@ -1,16 +1,35 @@
+//init config
+
 var express = require('express');
 var mongoose = require('mongoose');
+var passport = require('passport');
+var flash = require('connect-flash');
+var session = require('express-session');
 
 var Hacker = require('./models/hacker');
 
 var app = express();
 
 var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
+var morgan = require('morgan');
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
+app.use(cookieParser());
+app.use(morgan('dev')); //logging
 
+//db config
 mongoose.connect('mongodb://localhost:27017/hackertest');
 
+require('./js/passport.js')(passport);
+
+//passport stuffies
+app.use(session({secret: 'ilovetohackhackhack'}));
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(flash());
+
+//routing
 var router = express.Router();
 
 router.use(function(req, res, next){
