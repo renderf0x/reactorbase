@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<title>Welcome to HR20!</title>
-	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="stylesheet" href="../css/custom.css">
 	<!-- Bootstrap links below... -->
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -13,12 +13,12 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<script src="/html/lib/handlebars-v2.0.0.js"></script>
-	<script src="/js/templates.js"></script>
-	<script src="/js/display.js"></script>
-	<script src="/html/password.js"></script>
-	<script src="/html/data.js"></script>
-	<script src="/_temp/load_data.js"></script>
+	<script src="../html/lib/handlebars-v2.0.0.js"></script>
+	<script src="../js/templates.js"></script>
+	<script src="../js/display.js"></script>
+	<script src="../html/password.js"></script>
+	<script src="../html/data.js"></script>
+	<script src="../_temp/load_data.js"></script>
 </head>
 <body>
 
@@ -55,7 +55,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-6 col-sm-6 col-lg-4">
-				<small>Header area</small>
+				<!--<small>Header area</small>-->
 			</div>
 			<div class="col-6 col-sm-6 col-lg-4"></div>
 			<div class="col-md-1">
@@ -65,19 +65,16 @@
 		<div class="content-area">
 
 			<!--initial landing content -->
-			<p>Hey there, and welcome to the hacker directory!<p>
-			Choose a cohort to see folks, or just <a href="/hackers">display everyone</a>!
 
 				<!-- Content goes here -->
 
-				<script id="user-data" type="text/x-handlebars-template">
 				<div class="row">
 					<div class="col-md-2">
 					</div>
 					<div class="col-md-8">
 					<div class="panel panel-default user-panel">
 						<div class="panel-heading">
-							<img class="user-image img-thumbnail" src="img/user-pics/{{photo}}">
+							<img class="user-image img-thumbnail" src="../img/user-pics/{{photo}}">
 							<h1>{{name}}</h1>&nbsp;
 							<em>{{name_note}}</em>
 						</div>
@@ -102,21 +99,7 @@
 					<div class="col-md-2">
 					</div>
 					</div>
-				</script>
 				<!-- End User Template -->
-
-				<script id="hacker-grid" type="text/x-handlebars-template">
-					<div class="row">
-						{{#each this}}
-						<div class="col-xs-6 col-md-3">
-							    <a href="#" class="thumbnail" onclick="displayHackerByID('{{_id}}')">
-							      <img class="grid-image" src="img/user-pics-grid/{{photo}}" alt="{{name}}">
-							    </a>
-						    <div class="grid-name">{{name}}</div>
-						</div>
-						{{/each}}
-					</div>
-				</script>
 	</div>
 	<!--Login Modal-->
 	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">

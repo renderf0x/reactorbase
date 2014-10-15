@@ -12,7 +12,10 @@ var HackerSchema = new Schema({
 	q3: String,
 	q4: String,
 	q5: Array,
-	cohort: String
+	cohort: String,
+	github_id: String,
+	hometown: String,
+	date_added: Date
 });
 
 module.exports = mongoose.model('Hacker', HackerSchema);

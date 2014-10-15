@@ -38,9 +38,17 @@ app.use(flash());
 var router = express.Router();
 
 router.use(function(req, res, next){
+
 	console.log(Date.now() + ' Something is happening');
 	next();
 });
+
+//testing auth middleware function
+var isAuthenticated = function(req, res, next){
+	if (req.isAuthenticated())
+		return next();
+	res.redirect('/login')
+};
 
 /*router.get('/', function(req, res){
 	res.json({message: 'harro'});
@@ -76,6 +84,42 @@ router.route('/logout')
 	.get(function(req, res){
 		req.logout();
 		res.redirect('/');
+	});
+
+//test profile route
+
+router.route('/profile')
+	.get(isAuthenticated, function(req, res){
+		res.render('profile', {user: req.user});
+	});
+
+//render routes
+
+router.route('/hackers/cohorts/:cohort')
+	.get(isAuthenticated, function(req, res){
+		Hacker.find({cohort: req.params.cohort}, function(err, hackers){
+			if (err)
+				res.send(err);
+			res.render('hacker-grid', hackers);
+		});
+	});
+
+router.route('/hackers')
+	.get(isAuthenticated, function(req, res){
+		Hacker.find({}, function(err, hackers){
+			if (err)
+				res.send(err);
+			res.render('hacker-grid', hackers);
+		});
+	});
+
+router.route('/hackers/:hacker_id')
+	.get(isAuthenticated, function(req, res){
+		Hacker.findById(req.params.hacker_id, function(err, hacker){
+			if (err)
+				res.send(err);
+			res.render('hacker', hacker);
+		});
 	});
 
 //API routes follow. Use these for data

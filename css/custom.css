@@ -71,6 +71,10 @@ body {
   bottom: -40px;*/
 }
 
+.content-area {
+  padding-top: 80px;
+}
+
 /*.user-panel em {
   display: inline-block;
   position: relative;
