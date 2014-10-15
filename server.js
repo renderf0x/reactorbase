@@ -5,6 +5,7 @@ var mongoose = require('mongoose');
 var passport = require('passport');
 var flash = require('connect-flash');
 var session = require('express-session');
+var hbs = require('hbs');
 
 var Hacker = require('./models/hacker');
 
@@ -17,6 +18,10 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(morgan('dev')); //logging
+
+//templating
+app.set('view engine', 'html');
+app.engine('html', hbs.__express);
 
 //db config
 mongoose.connect('mongodb://localhost:27017/hackertest');
@@ -37,13 +42,45 @@ router.use(function(req, res, next){
 	next();
 });
 
-router.get('/', function(req, res){
+/*router.get('/', function(req, res){
 	res.json({message: 'harro'});
-});
+}); */
 
 app.use(express.static(__dirname));
 
-router.route('/hackers')
+//login and signup routes
+
+router.route('/login')
+	.get(function(req, res){
+		res.render('login', { message: req.flash('loginMessage')});
+	})
+
+	.post(passport.authenticate('local-login', {
+		successRedirect: '/api/hackers',
+		failureRedirect: '/login',
+		failureFlash: true
+	}));
+
+router.route('/signup')
+	.get(function(req, res){
+		res.render('signup', {message: req.flash('signupMessage')});
+	})
+
+	.post(passport.authenticate('local-signup',{
+		successRedirect: '/api/hackers',
+		failureRedirect: '/signup',
+		failureFlash: true
+	}));
+
+router.route('/logout')
+	.get(function(req, res){
+		req.logout();
+		res.redirect('/');
+	});
+
+//API routes follow. Use these for data
+
+router.route('/api/hackers')
 
 	.post(function(req, res){
 		var hacker = new Hacker();
@@ -77,7 +114,7 @@ router.route('/hackers')
 	});
 
 // single hacker lookups for /hackers/:hacker_id
-router.route('/hackers/:hacker_id')
+router.route('/api/hackers/:hacker_id')
 	
 	.get(function(req, res){
 		Hacker.findById(req.params.hacker_id, function(err, hacker){
@@ -113,7 +150,7 @@ router.route('/hackers/:hacker_id')
 
 //get hackers by cohort
 
-router.route('/hackers/cohort/:cohort')
+router.route('/api/hackers/cohort/:cohort')
 	
 	.get(function(req, res){
 		Hacker.find({cohort: req.params.cohort}, function(err, hacker){
@@ -123,6 +160,6 @@ router.route('/hackers/cohort/:cohort')
 		});
 	});
 
-app.use('/api', router);
+app.use('/', router);
 
 app.listen(process.env.PORT || 3000);
