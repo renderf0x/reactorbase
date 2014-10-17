@@ -50,23 +50,29 @@
           	</div>
           	<!--<button type="submit" class="btn btn-default">Submit</button>-->
           </form>
+          {{#if loggedIn}}
+            <ul class="nav navbar-nav navbar-right">
+          	 <li><a class="btn" href="/logout">Logout</a></li>
+          </ul>
+          {{else}}
           <ul class="nav navbar-nav navbar-right">
           	 <li><a class="btn" id="displayLogin" onclick="$('#loginModal').modal()">Login</a></li>
           </ul>
+          {{/if}}
       </div>
     </div>
 
 <!-- page content begins here -->
 		<section class="hacker-head">
-			<img class="user-image img-thumbnail" src="../img/user-pics-grid/{{photo}}">
-			<h1 class="hacker-name">{{name}}</h1>
+			<img class="user-image img-thumbnail" src="../img/user-pics-grid/{{hacker.photo}}">
+			<h1 class="hacker-name">{{hacker.name}}</h1>
 			<div>
-				<a href="/hackers/cohorts/{{cohort}}" class="hacker-cohort">{{cohort}}</a>
-				{{#each roles}}
-				<span class="hacker-cohort">{{this}}</span>
+				<a href="/hackers/cohorts/{{cohort}}" class="hacker-badge hacker-cohort">{{hacker.cohort}}</a>
+				{{#each hacker.roles}}
+				<span class="hacker-badge hacker-role">{{this}}</span>
 				{{/each}}
 			</div>
-			<em class="name-note">{{name_note}}</em>
+			<em class="name-note">{{hacker.name_note}}</em>
 		</section>
 		<div class="hacker-content-area">
 			<!--initial landing content -->
@@ -77,16 +83,16 @@
 							<div class="panel-heading">Q&amp;A</div>
 							<div class="panel-body">
 								<h3>What have you been up to before Hack Reactor?</h3>
-								{{q1}}
+								{{hacker.q1}}
 								<h3>What city are you coming from to be here at HR?</h3>
-								{{q2}}
+								{{hacker.q2}}
 								<h3>Tech Interests?</h3>
-								{{q3}}
+								{{hacker.q3}}
 								<h3>Coding Experience?</h3>
-								{{q4}}
+								{{hacker.q4}}
 								<h3>Fun Random Stuff?</h3>
 								<ul>
-								{{#each q5}}
+								{{#each hacker.q5}}
 									<li>{{this}}</li>
 								{{/each}}
 								</ul>
@@ -97,14 +103,14 @@
 						<div class="panel panel-default">
 							<div class="panel-heading">Info</div>
 							<ul class="hacker-profiles">
-								{{#if github_id}}
-								<li><a href="http://github.com/{{github_id}}"><i class="fa fa-github-alt"></i>    {{github_id}}</a></li>
+								{{#if hacker.github_id}}
+								<li><a href="http://github.com/{{hacker.github_id}}"><i class="fa fa-github-alt"></i>    {{hacker.github_id}}</a></li>
 								{{/if}}
-								{{#if email}}
-								<li><a href="mailto:{{email}}"><i class="fa fa-paper-plane"></i>    {{email}}</a></li>
+								{{#if hacker.email}}
+								<li><a href="mailto:{{hacker.email}}"><i class="fa fa-paper-plane"></i>    {{hacker.email}}</a></li>
 								{{/if}}
-								{{#if hometown}}
-								<li><a href="https://www.google.com/maps/place/{{hometown}}"><i class="fa fa-globe"></i>    {{hometown}}</a></li>
+								{{#if hacker.hometown}}
+								<li><a href="https://www.google.com/maps/place/{{hacker.hometown}}"><i class="fa fa-globe"></i>    {{hacker.hometown}}</a></li>
 								{{/if}}
 							</ul>
 						</div>
@@ -113,7 +119,7 @@
 							<ul class="hacker-profiles">
 								<li><i class="fa fa-trophy fa-2x"></i></i> No shoutouts here yet</a></li>
 							</ul>
-							<button class="btn btn-default btn-sm">Give a shoutout to {{name}}</button>
+							<button class="btn btn-default btn-sm">Give a shoutout to {{hacker.name}}</button>
 						</div>
 					</div>
 					</div>

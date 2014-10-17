@@ -90,7 +90,7 @@ router.route('/logout')
 
 router.route('/profile')
 	.get(isAuthenticated, function(req, res){
-		res.render('profile', {user: req.user});
+		res.render('profile', {user: req.user, loggedIn: true});
 	});
 
 //render routes
@@ -100,7 +100,7 @@ router.route('/hackers/cohorts/:cohort')
 		Hacker.find({cohort: req.params.cohort}, function(err, hackers){
 			if (err)
 				res.send(err);
-			res.render('hacker-grid', hackers);
+			res.render('hacker-grid', {hackers: hackers, loggedIn: true});
 		});
 	});
 
@@ -109,7 +109,7 @@ router.route('/hackers')
 		Hacker.find({}, function(err, hackers){
 			if (err)
 				res.send(err);
-			res.render('hacker-grid', hackers);
+			res.render('hacker-grid', {hackers: hackers, loggedIn: true});
 		});
 	});
 
@@ -118,7 +118,7 @@ router.route('/hackers/:hacker_id')
 		Hacker.findById(req.params.hacker_id, function(err, hacker){
 			if (err)
 				res.send(err);
-			res.render('hacker', hacker);
+			res.render('hacker', {hacker: hacker, loggedIn: true});
 		});
 	});
 
@@ -133,7 +133,7 @@ router.route('/search')
 			if (err)
 				res.send(err);
 			console.log('Found ' + hackers.length + ' results......');
-			res.render('hacker-grid', hackers);
+			res.render('hacker-grid', {hackers: hackers, loggedIn: true});
 		});
 	});
 

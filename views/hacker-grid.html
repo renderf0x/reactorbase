@@ -49,9 +49,15 @@
           	</div>
           	<!--<button type="submit" class="btn btn-default">Submit</button>-->
           </form>
+          {{#if loggedIn}}
+            <ul class="nav navbar-nav navbar-right">
+          	 <li><a class="btn" href="/logout">Logout</a></li>
+          </ul>
+          {{else}}
           <ul class="nav navbar-nav navbar-right">
           	 <li><a class="btn" id="displayLogin" onclick="$('#loginModal').modal()">Login</a></li>
           </ul>
+          {{/if}}
       </div>
     </div>
 
@@ -72,16 +78,16 @@
 
 				<!-- Content goes here -->
 					<div class="row">
-						{{#each this}}
-						{{#if name}} <!-- quick fix for weird empty box bug -->
+						{{#each hackers}}
+						{{#if this.name}} <!-- quick fix for weird empty box bug -->
 						<div class="col-xs-6 col-md-3">
-							    <a href="/hackers/{{_id}}" class="thumbnail grid-cell">
-							      <img class="grid-image" src="../../img/user-pics-grid/{{photo}}" alt="{{name}}">
+							    <a href="/hackers/{{this._id}}" class="thumbnail grid-cell">
+							      <img class="grid-image" src="../../img/user-pics-grid/{{this.photo}}" alt="{{this.name}}">
 							    </a>
 						    <div class="grid-info">
-							    <strong>{{name}}</strong>
+							    <strong>{{this.name}}</strong>
 							    <br />
-							    <small class="grid-cohort">{{cohort}}</small>
+							    <small class="grid-cohort">{{this.cohort}}</small>
 						    </div>
 						</div>
 						{{/if}}

@@ -57,70 +57,30 @@
 
 <!-- page content begins here -->
 	<div class="container">
-		<div class="row">
-			<div class="col-6 col-sm-6 col-lg-4">
-				<small>Header area</small>
-			</div>
-			<div class="col-6 col-sm-6 col-lg-4"></div>
-			<div class="col-md-1">
-				<!--<button class="btn btn-lrg btn-primary btn-block" id="displayLogin">Login</button> -->
-			</div>
-		</div>
 		<div class="content-area">
 
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-4">
+					<h1>reactorbase</h1>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+
 			<!--initial landing content -->
-			<p>Hey there, and welcome to the hacker directory!<p>
-			Choose a cohort to see folks, or just <a href="/hackers">display everyone</a>!
-
-				<!-- Content goes here -->
-
-				<script id="user-data" type="text/x-handlebars-template">
-				<div class="row">
-					<div class="col-md-2">
-					</div>
-					<div class="col-md-8">
-					<div class="panel panel-default user-panel">
-						<div class="panel-heading">
-							<img class="user-image img-thumbnail" src="img/user-pics/{{photo}}">
-							<h1>{{name}}</h1>&nbsp;
-							<em>{{name_note}}</em>
-						</div>
-						<div class="panel-body">
-							<h3>What have you been up to before Hack Reactor?</h3>
-							{{q1}}
-							<h3>What city are you coming from to be here at HR?</h3>
-							{{q2}}
-							<h3>Tech Interests?</h3>
-							{{q3}}
-							<h3>Coding Experience?</h3>
-							{{q4}}
-							<h3>Fun Random Stuff?</h3>
-							<ul>
-							{{#each q5}}
-								<li>{{this}}</li>
-							{{/each}}
-							</ul>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-2">
-					</div>
-					</div>
-				</script>
-				<!-- End User Template -->
-
-				<script id="hacker-grid" type="text/x-handlebars-template">
-					<div class="row">
-						{{#each this}}
-						<div class="col-xs-6 col-md-3">
-							    <a href="#" class="thumbnail" onclick="displayHackerByID('{{_id}}')">
-							      <img class="grid-image" src="img/user-pics-grid/{{photo}}" alt="{{name}}">
-							    </a>
-						    <div class="grid-name">{{name}}</div>
-						</div>
-						{{/each}}
-					</div>
-				</script>
+			<div class="row">
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-4">
+					<blockquote>
+						<p>Hey there, and welcome to the hacker directory!</p>
+						Choose a cohort to see folks, use the search box above or just <a href="/hackers">display everyone</a>!
+					</blockquote>
+				</div>
+				<div class="col-md-2">
+				</div>
+			</div>
+		</div>
 	</div>
 	<!--Login Modal-->
 	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
