@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Welcome to HR20!</title>
+	<title>reactorbase | cohort</title>
 	<link rel="stylesheet" href="/css/custom.css">
 	<!-- Bootstrap links below... -->
 	<!-- Latest compiled and minified CSS -->
@@ -46,7 +46,7 @@
             <li><a href="#about">About</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-          	 <li><button type="submit" class="btn btn-default" id="displayLogin" onclick="$('#loginModal').modal()">Login</button></li>
+          	 <li><a class="btn" id="displayLogin" onclick="$('#loginModal').modal()">Login</a></li>
           </ul>
       </div>
     </div>
@@ -69,12 +69,18 @@
 				<!-- Content goes here -->
 					<div class="row">
 						{{#each this}}
+						{{#if name}} <!-- quick fix for weird empty box bug -->
 						<div class="col-xs-6 col-md-3">
-							    <a href="/hackers/{{_id}}" class="thumbnail">
+							    <a href="/hackers/{{_id}}" class="thumbnail grid-cell">
 							      <img class="grid-image" src="../../img/user-pics-grid/{{photo}}" alt="{{name}}">
 							    </a>
-						    <div class="grid-name">{{name}}</div>
+						    <div class="grid-info">
+							    <strong>{{name}}</strong>
+							    <br />
+							    <small class="grid-cohort">{{cohort}}</small>
+						    </div>
 						</div>
+						{{/if}}
 						{{/each}}
 					</div>
 	</div>

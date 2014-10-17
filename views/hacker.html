@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Welcome to HR20!</title>
+	<title>reactorbase | {{name}}</title>
 	<link rel="stylesheet" href="../css/custom.css">
 	<!-- Bootstrap links below... -->
 	<!-- Latest compiled and minified CSS -->
@@ -9,6 +9,7 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -46,57 +47,70 @@
             <li><a href="#about">About</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-          	 <li><button type="submit" class="btn btn-default" id="displayLogin" onclick="$('#loginModal').modal()">Login</button></li>
+          	 <li><a class="btn" id="displayLogin" onclick="$('#loginModal').modal()">Login</a></li>
           </ul>
       </div>
     </div>
 
 <!-- page content begins here -->
-	<div class="container">
-		<div class="row">
-			<div class="col-6 col-sm-6 col-lg-4">
-				<!--<small>Header area</small>-->
+		<section class="hacker-head">
+			<img class="user-image img-thumbnail" src="../img/user-pics-grid/{{photo}}">
+			<h1 class="hacker-name">{{name}}</h1>
+			<div>
+				<a href="/hackers/cohorts/{{cohort}}" class="hacker-cohort">{{cohort}}</a>
+				{{#each roles}}
+				<span class="hacker-cohort">{{this}}</span>
+				{{/each}}
 			</div>
-			<div class="col-6 col-sm-6 col-lg-4"></div>
-			<div class="col-md-1">
-				<!--<button class="btn btn-lrg btn-primary btn-block" id="displayLogin">Login</button> -->
-			</div>
-		</div>
-		<div class="content-area">
-
+			<em class="name-note">{{name_note}}</em>
+		</section>
+		<div class="hacker-content-area">
 			<!--initial landing content -->
-
 				<!-- Content goes here -->
-
 				<div class="row">
-					<div class="col-md-2">
-					</div>
 					<div class="col-md-8">
-					<div class="panel panel-default user-panel">
-						<div class="panel-heading">
-							<img class="user-image img-thumbnail" src="../img/user-pics/{{photo}}">
-							<h1>{{name}}</h1>&nbsp;
-							<em>{{name_note}}</em>
+						<div class="panel panel-default user-panel">
+							<div class="panel-heading">Q&amp;A</div>
+							<div class="panel-body">
+								<h3>What have you been up to before Hack Reactor?</h3>
+								{{q1}}
+								<h3>What city are you coming from to be here at HR?</h3>
+								{{q2}}
+								<h3>Tech Interests?</h3>
+								{{q3}}
+								<h3>Coding Experience?</h3>
+								{{q4}}
+								<h3>Fun Random Stuff?</h3>
+								<ul>
+								{{#each q5}}
+									<li>{{this}}</li>
+								{{/each}}
+								</ul>
+							</div>
 						</div>
-						<div class="panel-body">
-							<h3>What have you been up to before Hack Reactor?</h3>
-							{{q1}}
-							<h3>What city are you coming from to be here at HR?</h3>
-							{{q2}}
-							<h3>Tech Interests?</h3>
-							{{q3}}
-							<h3>Coding Experience?</h3>
-							{{q4}}
-							<h3>Fun Random Stuff?</h3>
-							<ul>
-							{{#each q5}}
-								<li>{{this}}</li>
-							{{/each}}
+					</div>
+					<div class="col-md-4">
+						<div class="panel panel-default">
+							<div class="panel-heading">Info</div>
+							<ul class="hacker-profiles">
+								{{#if github_id}}
+								<li><a href="http://github.com/{{github_id}}"><i class="fa fa-github-alt"></i>    {{github_id}}</a></li>
+								{{/if}}
+								{{#if email}}
+								<li><a href="mailto:{{email}}"><i class="fa fa-paper-plane"></i>    {{email}}</a></li>
+								{{/if}}
+								{{#if hometown}}
+								<li><a href="https://www.google.com/maps/place/{{hometown}}"><i class="fa fa-globe"></i>    {{hometown}}</a></li>
+								{{/if}}
 							</ul>
 						</div>
-					</div>
-					</div>
-					<div class="col-md-2">
+						<div class="panel panel-default">
+							<div class="panel-heading">Shoutouts</div>
+							<ul class="hacker-profiles">
+								<li><i class="fa fa-trophy fa-2x"></i></i> No shoutouts here yet</a></li>
+							</ul>
+							<button class="btn btn-default btn-sm">Give a shoutout to {{name}}</button>
+						</div>
 					</div>
 					</div>
 				<!-- End User Template -->

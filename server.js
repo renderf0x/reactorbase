@@ -138,6 +138,10 @@ router.route('/api/hackers')
 		hacker.q4 = req.body.q4;
 		hacker.q5 = req.body.q5;
 		hacker.cohort = req.body.cohort;
+		hacker.github_id = req.body.github_id;
+		hacker.hometown = req.body.hometown;
+		hacker.email = req.body.email;
+		hacker.roles = req.body.roles;
 
 		hacker.save(function(err){
 			if (err)
@@ -207,3 +211,10 @@ router.route('/api/hackers/cohort/:cohort')
 app.use('/', router);
 
 app.listen(process.env.PORT || 3000);
+
+//uncomment for loading new data from data.js
+/*
+var hackerImport = require('./import/hacker_import');
+
+hackerImport.loadHackerArray(hackerImport.data);
+*/

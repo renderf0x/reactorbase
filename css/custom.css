@@ -48,21 +48,63 @@ body {
 }
 
 .user-image {
-  margin-right: 20px;
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 175px;
+  max-height: 175px;
 }
 
 .grid-image {
-  width: 200px;
+  width:  200px;
   height: 200px;
+  border-radius: 5px;
 }
 
-.grid-name {
-  text-align: center;
-  font-weight: bold;
+.grid-cell {
+  max-height: 175px;
+  max-width: 175px;
+}
+
+.grid-info {
+  text-align: left;
   margin-top: -10px;
   margin-bottom: 30px;
+}
+
+.grid-cohort {
+  color: grey;
+}
+
+.hacker-head {
+  background: #ECECEA;
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.hacker-name {
+  margin-bottom: 20px;
+}
+
+.hacker-cohort {
+  color: #ECECEA;
+  background: #74AFAD;
+  display: inline-block;
+  margin: -10px 0px 10px;
+  padding: 5px 20px;
+}
+
+.name-note {
+  font-size: 1em;
+}
+
+.hacker-content-area {
+  padding: 40px
+}
+
+.hacker-profiles {
+  list-style-type: none;
+  line-height: 2em;
+  margin-top: 10px;
 }
 
 .user-panel h1 {
