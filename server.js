@@ -64,7 +64,7 @@ router.route('/login')
 	})
 
 	.post(passport.authenticate('local-login', {
-		successRedirect: '/api/hackers',
+		successRedirect: '/',
 		failureRedirect: '/login',
 		failureFlash: true
 	}));
@@ -119,6 +119,21 @@ router.route('/hackers/:hacker_id')
 			if (err)
 				res.send(err);
 			res.render('hacker', hacker);
+		});
+	});
+
+//search routes
+
+router.route('/search')
+	.post(isAuthenticated, function(req, res){
+		var searchText = req.body.search;
+		console.log('Search text is \"' + searchText + '\"')
+
+		Hacker.find({ name: { $regex: searchText, $options: 'i'} }, function(err, hackers){
+			if (err)
+				res.send(err);
+			console.log('Found ' + hackers.length + ' results......');
+			res.render('hacker-grid', hackers);
 		});
 	});
 
