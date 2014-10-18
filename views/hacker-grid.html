@@ -23,20 +23,11 @@
 
 <!-- page content begins here -->
 	<div class="container">
-		<div class="row">
-			<div class="col-6 col-sm-6 col-lg-4">
-				<!--<small>Header area</small>-->
-			</div>
-			<div class="col-6 col-sm-6 col-lg-4"></div>
-			<div class="col-md-1">
-				<!--<button class="btn btn-lrg btn-primary btn-block" id="displayLogin">Login</button> -->
-			</div>
-		</div>
 		<div class="content-area">
 
 			<!--initial landing content -->
-
 				<!-- Content goes here -->
+				{{#if hackers}}
 					<div class="row">
 						{{#each hackers}}
 						{{#if this.name}} <!-- quick fix for weird empty box bug -->
@@ -53,26 +44,21 @@
 						{{/if}}
 						{{/each}}
 					</div>
+				{{else}}
+				<div  class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<div class="block-message">
+							<h1>No hackers to display.</h1>
+							<div><blockquote>try a different search.</blockquote></div>
+						</div>
+					</div>
+					<div class="col-md-2"></div>
+				{{/if}}
+		</div>
 	</div>
-	<!--Login Modal-->
-	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h4 class="modal-title" id="loginModalLabel">Log in</h4>
-	      </div>
-	      <div class="modal-body">
-	        <div class="form-signin" role="form">
-				<img class="form-image" src="https://hrhq.squarespace.com/assets/images/logo@2x.png" />
-				<h2 class="form-signin-heading">Welcome to HR20!</h2>
-				<small>Enter the passcode to see the peeps!</small>
-				<input type="password" class="form-control pass" placeholder="Password" required>
-				<button class="btn btn-lrg btn-primary btn-block" id="submitPassword" type="submit">Enter</button>
-			</div>
-	      </div>
-	      <!-- End Modal-->
-	    </div>
-	  </div>
-</div>
+	<!-- footer content -->
+	{{> footer }}
+
 </body>
 </html>

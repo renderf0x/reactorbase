@@ -28,7 +28,9 @@
 			<div class="row">
 				<div class="col-md-2"></div>
 				<div class="col-md-4">
-					<h1>reactorbase</h1>
+					<div class="block-message">
+						<h1>reactorbase</h1>
+					</div>
 				</div>
 				<div class="col-md-2"></div>
 			</div>
@@ -38,35 +40,21 @@
 				<div class="col-md-2">
 				</div>
 				<div class="col-md-4">
-					<blockquote>
-						<p>Hey there, and welcome to the hacker directory!</p>
-						Choose a cohort to see folks, use the search box above or just <a href="/hackers">display everyone</a>!
-					</blockquote>
+					<div class="block-message">
+						<blockquote>
+							<p>Hey there, and welcome to the hacker directory!</p>
+							Choose a cohort to see folks, use the search box above or just <a href="/hackers">display everyone</a>!
+						</blockquote>
+					</div>
 				</div>
 				<div class="col-md-2">
 				</div>
 			</div>
 		</div>
 	</div>
-	<!--Login Modal-->
-	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h4 class="modal-title" id="loginModalLabel">Log in</h4>
-	      </div>
-	      <div class="modal-body">
-	        <div class="form-signin" role="form">
-				<img class="form-image" src="https://hrhq.squarespace.com/assets/images/logo@2x.png" />
-				<h2 class="form-signin-heading">Welcome to HR20!</h2>
-				<small>Enter the passcode to see the peeps!</small>
-				<input type="password" class="form-control pass" placeholder="Password" required>
-				<button class="btn btn-lrg btn-primary btn-block" id="submitPassword" type="submit">Enter</button>
-			</div>
-	      </div>
-	      <!-- End Modal-->
-	    </div>
-	  </div>
-</div>
+
+	<!-- footer content -->
+	{{> footer }}
+
 </body>
 </html>

@@ -34,6 +34,7 @@
 			</div>
 			<em class="name-note">{{hacker.name_note}}</em>
 		</section>
+		<div class="container">
 		<div class="hacker-content-area">
 			<!--initial landing content -->
 				<!-- Content goes here -->
@@ -85,25 +86,9 @@
 					</div>
 				<!-- End User Template -->
 	</div>
-	<!--Login Modal-->
-	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h4 class="modal-title" id="loginModalLabel">Log in</h4>
-	      </div>
-	      <div class="modal-body">
-	        <div class="form-signin" role="form">
-				<img class="form-image" src="https://hrhq.squarespace.com/assets/images/logo@2x.png" />
-				<h2 class="form-signin-heading">Welcome to HR20!</h2>
-				<small>Enter the passcode to see the peeps!</small>
-				<input type="password" class="form-control pass" placeholder="Password" required>
-				<button class="btn btn-lrg btn-primary btn-block" id="submitPassword" type="submit">Enter</button>
-			</div>
-	      </div>
-	      <!-- End Modal-->
-	    </div>
-	  </div>
 </div>
+	<!-- footer content -->
+	{{> footer }}
+
 </body>
 </html>

@@ -2,6 +2,20 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #eee;
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 30px;
+  background-color: #f5f5f5;
+}
+
+.footer-text {
+  float: right;
 }
 
 .form-signin {
@@ -122,6 +136,14 @@ body {
 
 .content-area {
   padding-top: 80px;
+}
+
+.block-message {
+  color: #8E9CB8;
+}
+
+.block-message h1 {
+  color: #80ABA9;
 }
 
 /*.user-panel em {

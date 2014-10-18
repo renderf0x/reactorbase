@@ -19,9 +19,27 @@ var isAuthenticated = function(req, res, next){
 	res.redirect('/login')
 };
 
+var slashAuthenticated = function(req, res, next){
+	if (req.isAuthenticated())
+		return next();
+	res.redirect('/welcome');
+}
+
 /*router.get('/', function(req, res){
 	res.json({message: 'harro'});
 }); */
+
+//main slash route
+router.route('/')
+	.get(slashAuthenticated, function(req, res){
+		res.render('slash', {loggedIn: true});
+	});
+
+//welcome page route, if the above fails	
+router.route('/welcome')
+	.get(function(req, res){
+		res.render('welcome');
+	});
 
 //login and signup routes
 
