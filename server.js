@@ -22,6 +22,7 @@ app.use(morgan('dev')); //logging
 //templating
 app.set('view engine', 'html');
 app.engine('html', hbs.__express);
+hbs.registerPartials(__dirname + '/views/partials');
 
 //db config
 mongoose.connect('mongodb://localhost:27017/hackertest');
