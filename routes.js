@@ -1,47 +1,9 @@
-//init config
+//routes moved out of server.js file
 
 var express = require('express');
-var mongoose = require('mongoose');
 var passport = require('passport');
-var flash = require('connect-flash');
-var session = require('express-session');
-var hbs = require('hbs');
-
 var Hacker = require('./models/hacker');
 
-var app = express();
-
-var bodyParser = require('body-parser');
-var cookieParser = require('cookie-parser');
-var morgan = require('morgan');
-app.use(bodyParser.urlencoded({ extended: true}));
-app.use(bodyParser.json());
-app.use(cookieParser());
-app.use(morgan('dev')); //logging
-
-//templating
-app.set('view engine', 'html');
-app.engine('html', hbs.__express);
-hbs.registerPartials(__dirname + '/views/partials');
-
-//db config
-mongoose.connect('mongodb://localhost:27017/hackertest');
-
-require('./js/passport.js')(passport);
-
-//passport stuffies
-app.use(session({secret: 'ilovetohackhackhack'}));
-app.use(passport.initialize());
-app.use(passport.session());
-app.use(flash());
-
-//routing
-
-app.use(express.static(__dirname));
-
-var router = require('./routes');
-
-/*
 var router = express.Router();
 
 router.use(function(req, res, next){
@@ -57,7 +19,9 @@ var isAuthenticated = function(req, res, next){
 	res.redirect('/login')
 };
 
-app.use(express.static(__dirname));
+/*router.get('/', function(req, res){
+	res.json({message: 'harro'});
+}); */
 
 //login and signup routes
 
@@ -225,15 +189,5 @@ router.route('/api/hackers/cohort/:cohort')
 			res.json(hacker);
 		});
 	});
-*/
 
-app.use('/', router);
-
-app.listen(process.env.PORT || 3000);
-
-//uncomment for loading new data from data.js
-/*
-var hackerImport = require('./import/hacker_import');
-
-hackerImport.loadHackerArray(hackerImport.data);
-*/
+	module.exports = router;
