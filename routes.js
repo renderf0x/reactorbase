@@ -60,7 +60,7 @@ router.route('/signup')
 	})
 
 	.post(passport.authenticate('local-signup',{
-		successRedirect: '/api/hackers',
+		successRedirect: '/',
 		failureRedirect: '/signup',
 		failureFlash: true
 	}));

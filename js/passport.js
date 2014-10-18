@@ -3,6 +3,7 @@
 var LocalStrategy = require('passport-local').Strategy;
 
 var User = require('../models/user');
+var Hacker = require('../models/hacker');
 
 module.exports = function(passport){
 
@@ -32,17 +33,25 @@ module.exports = function(passport){
 				if (user){
 					return done(null, false, req.flash('signupMessage', 'You\'re already registered!'));
 				} else {
-					//create user
-					var newUser = new User();
 
-					newUser.local.email = email;
-					newUser.local.password = newUser.generateHash(password);
+					//this sub-find command checks to make sure a Hacker record already exists for this email, and creates a user ONLY if it does
+					Hacker.findOne({'email': email}, function(err, registeredHacker){
+						if(!registeredHacker){
+							return done(null, false, req.flash('signupMessage', 'This email address cannot be registered. Make sure you\'re using the same email you receive HR emails on.'));
+						} else {
+							//place the contents of this else block in the one above to disable existing email checking
+							var newUser = new User();
 
-					//save
-					newUser.save(function(err){
-						if (err)
-							throw err;
-						return done(null, newUser);
+							newUser.local.email = email;
+							newUser.local.password = newUser.generateHash(password);
+
+							//save
+							newUser.save(function(err){
+								if (err)
+									throw err;
+								return done(null, newUser);
+							});
+						}
 					});
 				}
 			});
