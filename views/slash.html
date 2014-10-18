@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>reactorbase | cohort</title>
+	<title>reactorbase | slash</title>
 	<link rel="stylesheet" href="/css/custom.css">
 	<!-- Bootstrap links below... -->
 	<!-- Latest compiled and minified CSS -->
@@ -19,40 +19,34 @@
 <body>
 
 	<!-- Fixed navbar -->
-    {{> navbar}}
+    {{> navbar }}
 
 <!-- page content begins here -->
 	<div class="container">
-		<div class="row">
-			<div class="col-6 col-sm-6 col-lg-4">
-				<!--<small>Header area</small>-->
-			</div>
-			<div class="col-6 col-sm-6 col-lg-4"></div>
-			<div class="col-md-1">
-				<!--<button class="btn btn-lrg btn-primary btn-block" id="displayLogin">Login</button> -->
-			</div>
-		</div>
 		<div class="content-area">
 
-			<!--initial landing content -->
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-4">
+					<h1>reactorbase</h1>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
 
-				<!-- Content goes here -->
-					<div class="row">
-						{{#each hackers}}
-						{{#if this.name}} <!-- quick fix for weird empty box bug -->
-						<div class="col-xs-6 col-md-3">
-							    <a href="/hackers/{{this._id}}" class="thumbnail grid-cell">
-							      <img class="grid-image" src="../../img/user-pics-grid/{{this.photo}}" alt="{{this.name}}">
-							    </a>
-						    <div class="grid-info">
-							    <strong>{{this.name}}</strong>
-							    <br />
-							    <small class="grid-cohort">{{this.cohort}}</small>
-						    </div>
-						</div>
-						{{/if}}
-						{{/each}}
-					</div>
+			<!--initial landing content -->
+			<div class="row">
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-4">
+					<blockquote>
+						<p>Hey there, and welcome to the hacker directory!</p>
+						Choose a cohort to see folks, use the search box above or just <a href="/hackers">display everyone</a>!
+					</blockquote>
+				</div>
+				<div class="col-md-2">
+				</div>
+			</div>
+		</div>
 	</div>
 	<!--Login Modal-->
 	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">

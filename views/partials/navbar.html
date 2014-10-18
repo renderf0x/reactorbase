@@ -1,29 +1,31 @@
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
       	<div class="navbar-header">
-      		<a class="navbar-brand" href="/">reactorbase:nu</a>
+      		<a class="navbar-brand" href="/">reactorbase</a>
       	</div>
-          <ul class="nav navbar-nav navbar-left">
-          	<li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hackers <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="/hackers/cohorts/hr20">HR20</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Not Yet Implemented</li>
-                <li class="disabled"><a href="#">HR21 (inactive)</a></li>
-                <li class="disabled"><a href="#">HR22 (inactive)</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Or see everyone!</li>
-                <li><a href="/hackers">All Hackers</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="navbar-left navbar-form" role="search" action="/search" method="post">
-          	<div class="form-group">
-          		<input name="search" type="text" class="form-control" placeholder="Search by name">
-          	</div>
-          	<!--<button type="submit" class="btn btn-default">Submit</button>-->
-          </form>
+          <div class="{{#if loggedIn}}show{{else}}hidden{{/if}}">
+            <ul class="nav navbar-nav navbar-left">
+            	<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cohorts <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="/hackers/cohorts/hr20">HR20</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Not Yet Implemented</li>
+                  <li class="disabled"><a href="#">HR21 (inactive)</a></li>
+                  <li class="disabled"><a href="#">HR22 (inactive)</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Or see everyone!</li>
+                  <li><a href="/hackers">All Hackers</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-left navbar-form" role="search" action="/search" method="post">
+            	<div class="form-group">
+            		<input name="search" type="text" class="form-control" placeholder="Search by name">
+            	</div>
+            	<!--<button type="submit" class="btn btn-default">Submit</button>-->
+            </form>
+          </div>
           {{#if loggedIn}}
             <ul class="nav navbar-nav navbar-right">
           	 <li><a class="btn" href="/logout">Logout</a></li>
