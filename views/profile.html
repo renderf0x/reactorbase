@@ -19,13 +19,37 @@
 <div class="container">
 
 	<div class="page-header text-center">
-		<h1><span class="fa fa-anchor"></span> Profile Page</h1>
+		<h1><span class="fa fa-anchor"></span> This is you!</h1>
 		<a href="/logout" class="btn btn-default btn-sm">Logout</a>
 	</div>
 
 	<div class="row">
 
-		<!-- LOCAL INFORMATION -->
+		<!-- Hacker info -->
+		<div class="col-sm-6">
+			<div class="well">
+				<img class="grid-image" src="/img/user-pics-grid/{{hacker.photo}}">
+				<div class="profile-info">
+					<h3> {{hacker.name}}</h3>
+					<div>
+						<a href="/hackers/cohorts/{{hacker.cohort}}" class="hacker-badge hacker-cohort">{{hacker.cohort}}</a>
+						{{#each hacker.roles}}
+						<span class="hacker-badge hacker-role">{{this}}</span>
+						{{/each}}
+					</div>
+
+						<p>
+							<strong>public hacker profile</strong>: <a href="/hackers/{{hacker._id}}">{{hacker.name}}</a> <br>
+							<strong>id</strong>: {{user._id}} <br>
+							<strong>email</strong>: {{user.local.email}} <br>
+						</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+<!--
+	<div class="row">
 		<div class="col-sm-6">
 			<div class="well">
 				<h3><span class="fa fa-user"></span> Local</h3>
@@ -40,6 +64,7 @@
 		</div>
 
 	</div>
+	-->
 
 </div>
 	<!-- footer content -->

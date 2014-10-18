@@ -75,7 +75,14 @@ router.route('/logout')
 
 router.route('/profile')
 	.get(isAuthenticated, function(req, res){
-		res.render('profile', {user: req.user, loggedIn: true});
+
+		Hacker.findOne({'email': req.user.local.email}, function(err, hacker){
+			if (err)
+				res.send(err);
+			res.render('profile', {user: req.user, hacker: hacker, loggedIn: true});
+		});
+
+		//res.render('profile', {user: req.user, loggedIn: true});
 	});
 
 //render routes
