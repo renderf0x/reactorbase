@@ -28,6 +28,8 @@ html,
 body {
   height: 100%;
   background-color: #1B5C5A;
+  background-image: url('/img/bg/BlueBackWhiteShimmer.jpg');
+  background-repeat: none;
 }
 body {
   color: #fff;

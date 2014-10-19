@@ -31,6 +31,9 @@
 				{{#each hacker.roles}}
 				<span class="hacker-badge hacker-role">{{this}}</span>
 				{{/each}}
+				{{#if hacker.isMe}}
+				<span class="hacker-badge hacker-badge-me">me</span>
+				{{/if}}
 			</div>
 			<em class="name-note">{{hacker.name_note}}</em>
 		</section>

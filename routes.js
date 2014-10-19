@@ -25,6 +25,7 @@ var slashAuthenticated = function(req, res, next){
 	res.redirect('/welcome');
 }
 
+//this function adds logged in Hacker lookup to render calls
 var renderWithUserInfo = function(path, req, res, options){
 	options = (options || {loggedIn: true}); //so everything doesn't crash without options
 	Hacker.findOne({ email: req.user.local.email}, function(err, hacker){
@@ -123,6 +124,8 @@ router.route('/hackers/:hacker_id')
 		Hacker.findById(req.params.hacker_id, function(err, hacker){
 			if (err)
 				res.send(err);
+			if (req.user.local.email == hacker.email)
+				hacker.isMe = true;
 			//res.render('hacker', {hacker: hacker, loggedIn: true});
 			renderWithUserInfo('hacker', req, res, {hacker: hacker, loggedIn: true});
 		});

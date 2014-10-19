@@ -4,16 +4,116 @@
 		"selected_items":
 		[
 			[
+				"back",
+				"background-repeat"
+			],
+			[
+				"logg",
+				"loggedIn"
+			],
+			[
+				"render",
+				"renderWithUserInfo"
+			],
+			[
+				"get",
+				"getHackerFromEmail"
+			],
+			[
+				"registered",
+				"registeredHacker"
+			],
+			[
+				"find",
+				"findOne"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"slash",
+				"slashAuthenticated"
+			],
+			[
+				"__",
+				"__dirname"
+			],
+			[
+				"col",
+				"col-md-2"
+			],
+			[
+				"sear",
+				"searchText"
+			],
+			[
+				"hacker",
+				"hacker-grid"
+			],
+			[
+				"res",
+				"res"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"data",
+				"dataLoad"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"is",
+				"isAuthenticated"
+			],
+			[
 				"fail",
 				"failureFlash"
 			],
 			[
 				"cookie",
 				"cookieParser"
-			],
-			[
-				"find",
-				"findOne"
 			],
 			[
 				"pas",
@@ -32,10 +132,6 @@
 				"displayHackerByID"
 			],
 			[
-				"margin",
-				"margin-top"
-			],
-			[
 				"paddin",
 				"padding-bottom"
 			],
@@ -46,10 +142,6 @@
 			[
 				"test",
 				"testUser"
-			],
-			[
-				"hacker",
-				"hacker_id"
 			],
 			[
 				"body",
@@ -68,28 +160,12 @@
 				"nextUser"
 			],
 			[
-				"max",
-				"max-width"
-			],
-			[
 				"inlin",
 				"inline-block"
 			],
 			[
-				"in",
-				"inline"
-			],
-			[
 				"return",
 				"returnVal"
-			],
-			[
-				"get",
-				"getPassword"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"s",
@@ -98,10 +174,6 @@
 			[
 				"re",
 				"results"
-			],
-			[
-				"is",
-				"isCommon"
 			],
 			[
 				"class",
@@ -168,10 +240,6 @@
 				"previousValue"
 			],
 			[
-				"padding",
-				"padding-bottom"
-			],
-			[
 				"ingredi",
 				"ingredientsOnly"
 			],
@@ -200,28 +268,19 @@
 	"buffers":
 	[
 		{
-			"file": "server.js",
+			"file": "views/welcome.html",
 			"settings":
 			{
-				"buffer_size": 3590,
+				"buffer_size": 3303,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "js/passport.js",
+			"file": "css/welcome.css",
 			"settings":
 			{
-				"buffer_size": 1639,
+				"buffer_size": 2622,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "models/user.js",
-			"settings":
-			{
-				"buffer_size": 526,
-				"line_ending": "Unix",
-				"name": "// User model - only local scheme for now but can"
 			}
 		}
 	],
@@ -259,25 +318,41 @@
 	[
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/css",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/import",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/js",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/models",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views"
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/partials"
 	],
 	"file_history":
 	[
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/signup.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/css/welcome.css",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/routes.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/partials/navbar.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/css/custom.css",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/profile.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/hacker.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/js/passport.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/hacker-grid.html",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/login.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/signup.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/css/sticky-footer.css",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/partials/footer",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/slash.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/server.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/welcome.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/index.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/nuhacker.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/import/data.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/models/hacker.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/import/hacker_import.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/_temp/data.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/models/user.js",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/login.hbs",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/package.json",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/index.html",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/js/display.js",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/css/custom.css",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/models/hacker.js",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/html/password.js",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/_temp/load_data.js",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/js/passport.js",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/css/signin.css",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/server.js",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/README.md",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/HR20_hackers_directory/data.js",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/HR20_hackers_directory/password.js",
@@ -337,6 +412,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"render",
+			"]",
+			"hackerArray[i]",
 			"login",
 			"\\’"
 		],
@@ -346,6 +424,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"req.body",
 			"\\'"
 		],
 		"reverse": false,
@@ -357,93 +436,67 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "server.js",
+					"file": "views/welcome.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3590,
+						"buffer_size": 3303,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1517,
-								1517
+								2579,
+								2579
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 779.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "js/passport.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1639,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1317,
-								1317
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 359.0,
+						"translation.y": 561.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "models/user.js",
+					"buffer": 1,
+					"file": "css/welcome.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 526,
+						"buffer_size": 2622,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								524,
-								524
+								401,
+								401
 							]
 						],
 						"settings":
 						{
-							"auto_name": "// User model - only local scheme for now but can",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -487,7 +540,7 @@
 	"project": "hackers-node.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
