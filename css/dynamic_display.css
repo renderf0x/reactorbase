@@ -1,0 +1,5 @@
+/* fixes an issue with the sticky footer on pages larger than the standard viewport */
+
+body {
+	position: relative;
+}

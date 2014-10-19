@@ -3,6 +3,7 @@
 var express = require('express');
 var passport = require('passport');
 var Hacker = require('./models/hacker');
+var User = require('./models/user');
 
 var router = express.Router();
 
@@ -84,7 +85,7 @@ router.route('/logout')
 		res.redirect('/');
 	});
 
-//test profile route
+//profile routes
 
 router.route('/profile')
 	.get(isAuthenticated, function(req, res){
@@ -96,6 +97,38 @@ router.route('/profile')
 			renderWithUserInfo('profile', req, res, {user: req.user, hacker: hacker, loggedIn: true});
 		});
 	});
+
+router.route('/change-password')
+	.get(isAuthenticated, function(req, res){
+		renderWithUserInfo('change-password', req, res, {loggedIn: true});
+	})
+	.post(isAuthenticated, function(req, res){
+		var oldPassword = req.body.oldPassword;
+		var newPassword = req.body.newPassword;
+		var newPasswordVerify = req.body.newPasswordVerify;
+		//res.json(req.user.validPassword(oldPassword));
+		if (!req.user.validPassword(oldPassword)){
+			req.flash('changePasswordMessage', 'Current password doesn\'t match');
+			renderWithUserInfo('change-password', req, res, { message: req.flash('changePasswordMessage'), loggedIn: true});
+		} else if (newPassword != newPasswordVerify){
+			req.flash('changePasswordMessage', 'New passwords don\'t match');
+			renderWithUserInfo('change-password', req, res, { message: req.flash('changePasswordMessage'), loggedIn: true});
+		} else {
+			console.log("User ID: " + req.user.id);
+			User.findById(req.user.id, function(err, user){
+				if (err)
+					return err;
+				user.local.password = user.generateHash(newPassword);
+
+				user.save(function(err){
+					if (err)
+						throw err;
+					//return user;
+			});
+			req.flash("changePasswordMessage", "Password successfully changed");
+			renderWithUserInfo('change-password', req, res, { successMessage: req.flash("changePasswordMessage"), loggedIn: true});
+		});
+	}});
 
 //render routes
 
