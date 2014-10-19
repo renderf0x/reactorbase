@@ -1,4 +1,5 @@
-//externalized db display functions
+//externalized db display functions using API
+// not currently used
 
 var displayHackerByID = function(user_id){
 	var url = 'http://localhost:3000/api/hackers/' + user_id;
