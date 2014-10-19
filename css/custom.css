@@ -72,6 +72,12 @@ body {
   border-radius: 5px;
 }
 
+.menu-image {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+
 .grid-cell {
   max-height: 175px;
   max-width: 175px;

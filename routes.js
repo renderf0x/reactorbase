@@ -25,6 +25,17 @@ var slashAuthenticated = function(req, res, next){
 	res.redirect('/welcome');
 }
 
+var renderWithUserInfo = function(path, req, res, options){
+	options = (options || {loggedIn: true}); //so everything doesn't crash without options
+	Hacker.findOne({ email: req.user.local.email}, function(err, hacker){
+		if(err)
+			return err;
+		//console.log("Hacker found: " + JSON.stringify(hacker));
+		options.loggedInHacker = hacker;
+		res.render(path, options);
+	});
+};
+
 /*router.get('/', function(req, res){
 	res.json({message: 'harro'});
 }); */
@@ -32,7 +43,8 @@ var slashAuthenticated = function(req, res, next){
 //main slash route
 router.route('/')
 	.get(slashAuthenticated, function(req, res){
-		res.render('slash', {loggedIn: true});
+		//res.render('slash', {loggedIn: true});
+		renderWithUserInfo('slash', req, res, {loggedIn: true});
 	});
 
 //welcome page route, if the above fails	
@@ -79,10 +91,9 @@ router.route('/profile')
 		Hacker.findOne({'email': req.user.local.email}, function(err, hacker){
 			if (err)
 				res.send(err);
-			res.render('profile', {user: req.user, hacker: hacker, loggedIn: true});
+			//res.render('profile', {user: req.user, hacker: hacker, loggedIn: true});
+			renderWithUserInfo('profile', req, res, {user: req.user, hacker: hacker, loggedIn: true});
 		});
-
-		//res.render('profile', {user: req.user, loggedIn: true});
 	});
 
 //render routes
@@ -92,7 +103,8 @@ router.route('/hackers/cohorts/:cohort')
 		Hacker.find({cohort: req.params.cohort}, function(err, hackers){
 			if (err)
 				res.send(err);
-			res.render('hacker-grid', {hackers: hackers, loggedIn: true});
+			//res.render('hacker-grid', {hackers: hackers, loggedIn: true});
+			renderWithUserInfo('hacker-grid', req, res, {hackers: hackers, loggedIn: true});
 		});
 	});
 
@@ -101,7 +113,8 @@ router.route('/hackers')
 		Hacker.find({}, function(err, hackers){
 			if (err)
 				res.send(err);
-			res.render('hacker-grid', {hackers: hackers, loggedIn: true});
+			//res.render('hacker-grid', {hackers: hackers, loggedIn: true});
+			renderWithUserInfo('hacker-grid', req, res, {hackers: hackers, loggedIn: true});
 		});
 	});
 
@@ -110,7 +123,8 @@ router.route('/hackers/:hacker_id')
 		Hacker.findById(req.params.hacker_id, function(err, hacker){
 			if (err)
 				res.send(err);
-			res.render('hacker', {hacker: hacker, loggedIn: true});
+			//res.render('hacker', {hacker: hacker, loggedIn: true});
+			renderWithUserInfo('hacker', req, res, {hacker: hacker, loggedIn: true});
 		});
 	});
 
@@ -125,7 +139,8 @@ router.route('/search')
 			if (err)
 				res.send(err);
 			console.log('Found ' + hackers.length + ' results......');
-			res.render('hacker-grid', {hackers: hackers, loggedIn: true});
+			//res.render('hacker-grid', {hackers: hackers, loggedIn: true});
+			renderWithUserInfo('hacker-grid', req, res, {hackers: hackers, loggedIn: true});
 		});
 	});
 

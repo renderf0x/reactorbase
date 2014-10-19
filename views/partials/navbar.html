@@ -28,7 +28,17 @@
           </div>
           {{#if loggedIn}}
             <ul class="nav navbar-nav navbar-right">
+              <li><a href="">Logged in as:</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{loggedInHacker.name}}   <img class="menu-image" src="/img/user-pics-grid/{{loggedInHacker.photo}}"> <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="/profile">Profile</a></li>
+                  <li><a href="/logout">Logout</a></li>
+                </ul>
+              </li>
+            <!--
           	 <li><a class="btn" href="/logout">Logout</a></li>
+             -->
           </ul>
           {{else}}
           <ul class="nav navbar-nav navbar-right">
