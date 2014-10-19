@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"auth",
+				"authenticatedAsAdmin"
+			],
+			[
+				"re",
+				"redirect"
+			],
+			[
+				"add",
+				"add-hacker"
+			],
+			[
+				"find",
+				"findById"
+			],
+			[
+				"logge",
+				"loggedIn"
+			],
+			[
+				"new",
+				"newPassword"
+			],
+			[
 				"back",
 				"background-repeat"
 			],
@@ -22,10 +46,6 @@
 			[
 				"registered",
 				"registeredHacker"
-			],
-			[
-				"find",
-				"findOne"
 			],
 			[
 				"tex",
@@ -124,10 +144,6 @@
 				"passwordField"
 			],
 			[
-				"new",
-				"newUser"
-			],
-			[
 				"dis",
 				"displayHackerByID"
 			],
@@ -170,10 +186,6 @@
 			[
 				"s",
 				"script"
-			],
-			[
-				"re",
-				"results"
 			],
 			[
 				"class",
@@ -268,18 +280,34 @@
 	"buffers":
 	[
 		{
-			"file": "views/welcome.html",
+			"file": "server.js",
 			"settings":
 			{
-				"buffer_size": 3303,
+				"buffer_size": 1445,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "css/welcome.css",
+			"file": "routes.js",
 			"settings":
 			{
-				"buffer_size": 2622,
+				"buffer_size": 8025,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/add-hacker.html",
+			"settings":
+			{
+				"buffer_size": 2900,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/hacker.html",
+			"settings":
+			{
+				"buffer_size": 3271,
 				"line_ending": "Unix"
 			}
 		}
@@ -317,29 +345,32 @@
 	"expanded_folders":
 	[
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/css",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/import",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/js",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/partials"
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/models",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views"
 	],
 	"file_history":
 	[
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/change-password.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/profile.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/changepassword.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/login.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/signup.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/slash.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/css/dynamic_display.css",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/hacker-grid.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/hacker.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/css/custom.css",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/css/static_display.css",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/welcome.html",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/js/display.js",
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/config.js",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/css/welcome.css",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/routes.js",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/partials/navbar.html",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/css/custom.css",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/profile.html",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/hacker.html",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/js/passport.js",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/hacker-grid.html",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/login.html",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/signup.html",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/css/sticky-footer.css",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/partials/footer",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/slash.html",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/server.js",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/welcome.html",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/index.html",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/nuhacker.html",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/import/data.js",
@@ -349,7 +380,6 @@
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/models/user.js",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views/login.hbs",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/package.json",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/js/display.js",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/html/password.js",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/_temp/load_data.js",
 		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/css/signin.css",
@@ -441,62 +471,118 @@
 			[
 				{
 					"buffer": 0,
-					"file": "views/welcome.html",
+					"file": "server.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3303,
+						"buffer_size": 1445,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2579,
-								2579
+								763,
+								763
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "routes.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8025,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1118,
+								1118
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 199.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "views/add-hacker.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2900,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2644,
+								2644
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 561.0,
+						"translation.y": 764.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "css/welcome.css",
-					"semi_transient": false,
+					"buffer": 3,
+					"file": "views/hacker.html",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 2622,
+						"buffer_size": 3271,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								401,
-								401
+								1823,
+								1823
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 208.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

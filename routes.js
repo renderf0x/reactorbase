@@ -24,7 +24,25 @@ var slashAuthenticated = function(req, res, next){
 	if (req.isAuthenticated())
 		return next();
 	res.redirect('/welcome');
-}
+};
+
+//this function is used for authenticating admin users via set roles
+var authenticatedAsAdmin = function(req, res, next){
+	var validRoles = ["class-lead","hr-staff","hacker-in-residence"];
+	if(req.isAuthenticated()){
+		Hacker.findOne({email: req.user.local.email}, function(err, hacker){
+			if (err)
+				return err;
+			for (var i = 0; i < validRoles.length; i++){
+				if (hacker.roles.indexOf(validRoles[i]) > -1)
+					return next();
+			}
+			res.redirect(req.originalUrl);
+		});
+	} else {
+			res.redirect('/');
+	}
+};
 
 //this function adds logged in Hacker lookup to render calls
 var renderWithUserInfo = function(path, req, res, options){
@@ -129,6 +147,12 @@ router.route('/change-password')
 			renderWithUserInfo('change-password', req, res, { successMessage: req.flash("changePasswordMessage"), loggedIn: true});
 		});
 	}});
+
+router.route('/add-hacker')
+	.get(authenticatedAsAdmin, function(req, res){
+		req.flash('hackerAddMessage', 'successfully authenticated');
+		renderWithUserInfo('add-hacker', req, res, {message: req.flash('hackerAddMessage'), loggedIn: true});
+	});
 
 //render routes
 
