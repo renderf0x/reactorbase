@@ -13,3 +13,7 @@ Uncomment the lines in server.js at the bottom to load in hackers from hr20
 This is still quite an incomplete app. Some planned features are:
 
 1. Adding hackers via some variety of webform, instead of by JSON
+
+2. Ability to send and recieve 'shoutout' messages (this is being worked on)
+
+3. Data for additional cohorts
