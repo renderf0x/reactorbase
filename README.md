@@ -17,3 +17,5 @@ This is still quite an incomplete app. Some planned features are:
 2. Ability to send and recieve 'shoutout' messages (this is being worked on)
 
 3. Data for additional cohorts
+
+4. Ability to edit own profile
