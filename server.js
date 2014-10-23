@@ -50,7 +50,8 @@ app.use('/', router);
 app.listen(process.env.PORT || 3000);
 
 //uncomment for loading new data from data.js
-
+/*
 var hackerImport = require('./import/hacker_import');
 
 hackerImport.loadHackerArray(hackerImport.data);
+*/
