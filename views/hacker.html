@@ -76,13 +76,15 @@
 							<ul class="hacker-profiles">
 								<li><i class="fa fa-trophy fa-2x"></i></i> No shoutouts here yet</a></li>
 							</ul>
-							<button class="btn btn-default btn-sm">Give a shoutout to {{hacker.name}}</button>
+							<button class="btn btn-default btn-sm" data-toggle="modal" data-target="#compose-shoutout-modal">Give a shoutout to {{hacker.name}}</button>
 						</div>
 					</div>
 					</div>
 				<!-- End User Template -->
 	</div>
 </div>
+	<!--shoutout modal-->
+	{{> compose_shoutout }}
 	<!-- footer content -->
 	{{> footer }}
 

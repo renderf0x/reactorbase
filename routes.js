@@ -4,6 +4,7 @@ var express = require('express');
 var passport = require('passport');
 var Hacker = require('./models/hacker');
 var User = require('./models/user');
+var Message = require('./models/message');
 
 var router = express.Router();
 
@@ -290,4 +291,37 @@ router.route('/api/hackers/cohort/:cohort')
 		});
 	});
 
-	module.exports = router;
+router.route('/api/shoutouts/recipient/:recipient')
+	.get(function(req, res){
+		Message.find({recipient: req.params.recipient}).where('type').equals('shoutout').exec(function(err, messages){
+			if(err)
+				res.send(err);
+			res.json(messages);
+		});
+
+	})
+	.post(function(req, res){
+		var message = new Message();
+		//gets sender email from logged in user
+		/*
+		Hacker.findById(req.user.id, function(err, user){
+			if (err)
+				return err;
+			message.sender = user.email;
+		}); */
+		message.sender = req.user.local.email;
+		message.recipient = req.params.recipient; //from URL
+		message.type = 'shoutout';
+		message.title = req.body.messageTitle;
+		message.content = req.body.messageContent;
+		message.date = Date.now();
+
+		message.save(function(err){
+			if (err)
+				res.send(err);
+			res.json({'messageStatus': 'Shoutout saved!'});
+		});
+
+	});
+
+module.exports = router;
