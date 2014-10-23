@@ -296,18 +296,18 @@
 			}
 		},
 		{
-			"file": "views/add-hacker.html",
+			"file": "config.js",
 			"settings":
 			{
-				"buffer_size": 2900,
+				"buffer_size": 140,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "views/hacker.html",
+			"file": "views/add-hacker.html",
 			"settings":
 			{
-				"buffer_size": 3271,
+				"buffer_size": 2900,
 				"line_ending": "Unix"
 			}
 		}
@@ -344,9 +344,7 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/models",
-		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node/views"
+		"/Users/derek/Documents/私用 > Real Documents/Dev/Hack Reactor/Precourse/HR20_directory/hackers-node"
 	],
 	"file_history":
 	[
@@ -466,7 +464,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -482,8 +480,8 @@
 						"selection":
 						[
 							[
-								763,
-								763
+								1445,
+								1445
 							]
 						],
 						"settings":
@@ -492,10 +490,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 119.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -521,14 +519,42 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 199.0,
+						"translation.y": 3659.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								77,
+								77
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "views/add-hacker.html",
 					"semi_transient": false,
 					"settings":
@@ -553,36 +579,7 @@
 						"translation.y": 764.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "views/hacker.html",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 3271,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1823,
-								1823
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 208.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
