@@ -30,53 +30,84 @@
 	{{/if}}
 
 	<!-- LOGIN FORM -->
-	<form action="/add-hacker" method="post">
+	<!--<form action="/add-hacker" method="post">-->
+	<form id="hacker-add-form">
 		<div class="form-group">
 			<label>Name</label>
-			<input type="text" class="form-control" name="name">
+			<input type="text" class="form-control" name="name" placeholder="Harry Hacker">
 		</div>
 		<div class="form-group">
 			<label>Name note</label>
-			<input type="text" class="form-control" name="nameNote">
+			<input type="text" class="form-control" name="name_note" placeholder="The Hs are silent.">
+		</div>
+		<div class="form-group">
+			<label>Cohort</label>
+			<select id="cohort-select" class="form-control" name="cohort">
+				<option>HR20</option>
+				<option>HR22</option>
+				<option>HR23</option>
+			</select>
 		</div>
 		<div class="form-group">
 			<label>Photo filename</label>
-			<input type="text" class="form-control" name="nameNote">
+			<input type="text" class="form-control" name="photo" placeholder="harryhacker.jpg">
 			<small>Note: files must currently be uploaded to /img/user-pics-grid. Use test.png for temp. If uploading resize images to 300pxx300px.</small>
 		</div>
 		<div class="form-group">
 			<label>Email</label>
-			<input type="text" class="form-control" name="email">
+			<input type="text" class="form-control" name="email" placeholder="harry@hacker.com">
 		</div>
 		<div class="form-group">
 			<label>Hometown</label>
-			<input type="text" class="form-control" name="hometown">
+			<input type="text" class="form-control" name="hometown" placeholder="Hackersville, Hungary">
 		<div class="form-group">
 			<label>Github ID</label>
-			<input type="text" class="form-control" name="githubID">
+			<input type="text" class="form-control" name="github_id" placeholder="hackm3b4by">
 		</div>
 		<div class="form-group">
 			<label>Q1: What have you been up to before Hack Reactor?</label>
-			<input type="text" class="form-control" name="q1">
+			<input type="text" class="form-control" name="q1" placeholder="I thought I was a fish, and swam in the deep tranquil ocean.">
 		</div>
 		<div class="form-group">
 			<label>Q2: What city are you coming from to be here at HR?</label>
-			<input type="text" class="form-control" name="q2">
+			<input type="text" class="form-control" name="q2" placeholder="From my lovely home in Miami.">
 		</div>
 		<div class="form-group">
 			<label>Q3: Tech Interests?</label>
-			<input type="text" class="form-control" name="q3">
+			<input type="text" class="form-control" name="q3" placeholder="I think I'd like to reinvent the egyptian method of pyramid building">
 		</div>
 		<div class="form-group">
 			<label>Q4: Coding Experience?</label>
-			<input type="text" class="form-control" name="q4">
+			<input type="text" class="form-control" name="q4" placeholder="I am experienced in FORTRAN">
 		</div>
 		<div class="form-group">
 			<label>Q5: Fun Random Stuff??</label>
-			<input type="text" class="form-control" name="q5">
+			<div id="box">
+				<input name="q5_1" type="text" id="q5" class="q5 form-control" placeholder="Tell us something interesting!">
+			<a class="addQ5Fields"><i class="fa fa-plus-circle fa-2x"></i></a>
+			</div>
+		</div>
+		<div class="form-group">
+			<label>Roles</label>
+			<label class="checkbox-inline">
+			  <input class="roles-select" type="checkbox" id="rolesCheck1" value="hacker" checked disabled> hacker
+			</label>
+			<label class="checkbox-inline">
+			  <input class="roles-select" type="checkbox" id="rolesCheck2" value="class-lead"> class-lead
+			</label>
+			<label class="checkbox-inline">
+			  <input class="roles-select" type="checkbox" id="rolesCheck3" value="hacker-in-residence"> hacker-in-residence
+			</label>
+			<label class="checkbox-inline">
+			  <input class="roles-select" type="checkbox" id="rolesCheck4" value="hr-staff"> hr-staff
+			</label>
+			<label class="checkbox-inline">
+			  <input class="roles-select" type="checkbox" id="rolesCheck4" value="reactorbase-admin"> reactorbase-admin
+			</label>
 		</div>
 
-		<button type="submit" class="btn btn-warning btn-lg">Submit</button>
+		<!--<button type="submit" class="btn btn-warning btn-lg" id="addHackerButton">Add Hacker</button>-->
+		<a class="btn btn-warning btn-lg" id="addHackerButton">Add Hacker</a>
 	</form>
 
 	<hr>
@@ -90,6 +121,7 @@
 	<!-- js files -->
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="/js/add-hacker-client.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,16 @@
+module.exports = [
+	{
+		name: 'Chris McCloud',
+		cohort: 'hr17',
+		name_note: 'Chris or Christopher is fine, whatever feels natural to you.',
+		photo:'chrismccloud.jpg',
+		q1: 'Once upon a time I studied philosophy - my first few years were spent focusing on virtue ethics, philosophy of love and friendship, and philosophy of literature. Later I got really interested in philosophy of science and philosophy of language/formal Logic. Just before Hack Reactor I was studying to go back to school to get a Nursing Degree, with the aim of working abroad for Doctors without Borders - in fact, I was in the middle of my application cycle when my brother introduced me to programming and told me about Hack Reactor. Within a week I had dropped all my classes and decided that this was what I wanted to do, and spent the next several months studying my ass off to get into HR. Looking back, it was the best decision I ever made; I can\'t speak highly enough about the program.',
+		q2: 'I grew up in the Bay Area (Orinda and El Cerrito) and then moved to Texas at 15 where I lived until 2012. Since then I\'ve been living here in San Francisco and I\'m really stoked to be back in the place I consider home. I\'ve also spent a few years traveling around the world, mostly Latin America and the Mediterranean , and am looking forward to a life as a nomad programmer. ',
+		q3: 'For my group project I extended a Hack Reactor project called the Visual Interpreter that parses Javascript code and visualizes it in interesting ways as a way of teaching some of the less intuitive ideas in programming. I absolutely had a blast and am going to be spending the next few months as an HIR working though a book called Structure and Interpretations of Computer Programs (I used it to study for HR). The capstone project is a Meta-Circular Evaluator written in Scheme (a dialect of Lisp). Parts of programming feel like doing philosophy, right now I\'m most excited about learning more about different programming paradigms (functional is what I\'m focusing on now) and programming language design. More generally I\'m really interested in the intersection of privacy and technology, and could see myself trying to find work for a company doing work on distributed networking models (think Bittorrent or TOR). ',
+		q4: 'Wrote my first line of code sometime in April of this year. It felt like coming home.',
+		q5: ['I\'ve worked as a test prep instructor for Princeton Review teaching the SAT, LSAT, and MCAT. I absolutely loved it and was able to work for them remotely while traveling. ', 'My father\'s family is from Argentina, and my mothers family is from Puerto Rico - to my shame, and despite the fact that it was my first language, my Spanish is pretty bad these days, and I\'d like to move back to Buenos Aires for a few years to fix that.','I really enjoy getting to know good restaurants and performance venues in the city, if you have any questions about good places to eat or hangout let me know and I\'ll best I can find some spots you\'ll like. '],
+		github_id: 'cmccloud',
+		hometown: 'Orinda, USA',
+		email: 'chris.mccloud@hackreactor.com',
+		roles: ['hacker', 'hacker-in-residence']
+	}];

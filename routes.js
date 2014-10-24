@@ -150,7 +150,7 @@ router.route('/change-password')
 	}});
 
 router.route('/add-hacker')
-	.get(authenticatedAsAdmin, function(req, res){
+	.get(isAuthenticated, function(req, res){
 		req.flash('hackerAddMessage', 'successfully authenticated');
 		renderWithUserInfo('add-hacker', req, res, {message: req.flash('hackerAddMessage'), loggedIn: true});
 	});
@@ -211,7 +211,7 @@ router.route('/api/hackers')
 
 	.post(function(req, res){
 		var hacker = new Hacker();
-		//console.log("req = " + JSON.stringify(req));
+		//console.log("req.body = " + JSON.stringify(req.body));
 		hacker.name = req.body.name;
 		hacker.name_note = req.body.name_note;
 		hacker.photo = req.body.photo;
@@ -224,6 +224,7 @@ router.route('/api/hackers')
 		hacker.github_id = req.body.github_id;
 		hacker.hometown = req.body.hometown;
 		hacker.email = req.body.email;
+
 		hacker.roles = req.body.roles;
 
 		hacker.save(function(err){

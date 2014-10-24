@@ -2,7 +2,7 @@
 
 var Hacker = require('../models/hacker');
 
-var dataFile = require('./data-10232014.js');
+var dataFile = require('./data-10232014part2.js');
 
 
 module.exports = {
