@@ -149,6 +149,14 @@ router.route('/change-password')
 		});
 	}});
 
+//this is stubbed out to just change a hacker's phone number right now but should be extensible
+//for editing profiles in the future
+router.route('/change-phone')
+	.get()
+	.post(isAuthenticated, function(req, res){
+		//fill in 
+	});
+
 router.route('/add-hacker')
 	.get(isAuthenticated, function(req, res){
 		req.flash('hackerAddMessage', 'successfully authenticated');

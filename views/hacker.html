@@ -66,6 +66,12 @@
 								{{#if hacker.email}}
 								<li><a href="mailto:{{hacker.email}}"><i class="fa fa-paper-plane"></i>    {{hacker.email}}</a></li>
 								{{/if}}
+								{{#if hacker.phone}}
+								<li><a href="tel:{{hacker.phone}}"><i class="fa fa-phone"></i>
+								{{hacker.phone}}</a></li>
+								{{else}}
+								<li><a href="#" data-toggle="modal" data-target="#change-phone-modal"><i class="fa fa-plus-circle"></i> Add Phone</a>
+								{{/if}}
 								{{#if hacker.hometown}}
 								<li><a href="https://www.google.com/maps/place/{{hacker.hometown}}"><i class="fa fa-globe"></i>    {{hacker.hometown}}</a></li>
 								{{/if}}
@@ -85,6 +91,8 @@
 </div>
 	<!--shoutout modal-->
 	{{> compose_shoutout }}
+	<!--change phone modal-->
+	{{> change_phone}}
 	<!-- footer content -->
 	{{> footer }}
 
