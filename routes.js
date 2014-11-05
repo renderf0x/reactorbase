@@ -149,14 +149,6 @@ router.route('/change-password')
 		});
 	}});
 
-//this is stubbed out to just change a hacker's phone number right now but should be extensible
-//for editing profiles in the future
-router.route('/change-phone')
-	.get()
-	.post(isAuthenticated, function(req, res){
-		//fill in 
-	});
-
 router.route('/add-hacker')
 	.get(isAuthenticated, function(req, res){
 		req.flash('hackerAddMessage', 'successfully authenticated');
@@ -298,6 +290,41 @@ router.route('/api/hackers/cohort/:cohort')
 				res.send(err);
 			res.json(hacker);
 		});
+	});
+
+//this is stubbed out to just change a hacker's phone number right now but should be extensible
+//for editing profiles in the future
+router.route('/api/change-phone/:hacker_id')
+	.post(isAuthenticated, function(req, res){
+		//fill in
+		Hacker.findById(req.params.hacker_id, function(err, hacker){
+			if(err)
+				return err;
+			hacker.phone = req.body.phone;
+
+			//save here dude
+			hacker.save(function(err){
+				if (err)
+					res.send(err);
+				res.json({'messageStatus': 'Phone Number Saved!'});
+			});
+			
+		});
+		// template from password change
+		// 	User.findById(req.user.id, function(err, user){
+		// 		if (err)
+		// 			return err;
+		// 		user.local.password = user.generateHash(newPassword);
+
+		// 		user.save(function(err){
+		// 			if (err)
+		// 				throw err;
+		// 			//return user;
+		// 	});
+		// 	req.flash("changePasswordMessage", "Password successfully changed");
+		// 	renderWithUserInfo('change-password', req, res, { successMessage: req.flash("changePasswordMessage"), loggedIn: true});
+		// });
+
 	});
 
 router.route('/api/shoutouts/recipient/:recipient')

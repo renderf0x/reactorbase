@@ -7,18 +7,17 @@
       </div>
       <div class="modal-body">
 
-        <h2>Under Construction&hellip;</h2>
-        <p>This section is currently being worked on! Shoutouts will be available soon!</p>
+        <h2>Change Phone Number&hellip;</h2>
+        <p>Enter phone number for {{hacker.name}} below and press save</p>
 
-        <!-- form content
-        <form action="/api/shoutouts/recipient/{{hacker.email}}" method="post">
+        <!-- form content -->
+        <form action="/api/change-phone/{{hacker._id}}" method="post">
           <div class="form-group">
-            <input name="messageTitle" type="text" class="form-control" placeholder="Shoutout summary / title (optional)">
-            <input name="messageContent" type="text" class="form-control" placeholder="What are you giving {{hacker.name}} a shoutout for?">
+            <input name="phone" type="text" class="form-control" placeholder="000-000-0000" {{#if hacker.phone}}value="{{hacker.phone}}"{{/if}}>
           </div>
           <button type="submit" class="btn btn-primary">Save changes</button>
         </form>
-        -->
+
       </div>
       <!--
       <div class="modal-footer">
