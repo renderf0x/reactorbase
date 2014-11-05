@@ -306,7 +306,9 @@ router.route('/api/change-phone/:hacker_id')
 			hacker.save(function(err){
 				if (err)
 					res.send(err);
-				res.json({'messageStatus': 'Phone Number Saved!'});
+				//res.json({'messageStatus': 'Phone Number Saved!'});
+				//renderWithUserInfo('hacker', req, res, {successMessage: req.flash("phoneNumberChangeMessage"), loggedIn:true, hacker: hacker})
+				res.redirect('/hackers/' + req.params.hacker_id);
 			});
 			
 		});
